@@ -21,10 +21,10 @@ SECRET_KEY = Copy the one we provide
 BUCKET = Copy the one we provide
 
 [prefix_buckets]
-CONTENTS = /Content/latest
-EPISODES = /Episodes/latest
-STATS = /Stats/latest
-SOURCE = /Stats/latest
+CONTENTS = Content/latest
+EPISODES = Episodes/latest
+STATS = Stats/latest
+SOURCE = Stats/latest
 
 [paths]
 CONTENTS = Datos/Contents
