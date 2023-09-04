@@ -52,3 +52,9 @@ SOURCES = Datos/Sources
 
 ## Notes
 Remember to never commit your `config.cfg` with sensitive credentials to a public repository.
+
+## Schedule
+You can create a .sh, .bat, or any required file and run it with an orchestrator or just with a crontab.
+
+Example:
+At 12:00 on Saturday: `0 12 * * 6`
