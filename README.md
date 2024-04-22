@@ -51,7 +51,7 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 - Daily and weekly updates of the content offering
 - BB UID: a unique identifier for streamlined content tracking
   
-🚀 For more information on schemas and to access our S3 buckets, please [click here](/streaming-availability-schemas.md).
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/sa-schemas.md).
 
 ### Updates & Coverage
 - Data is updated daily and weekly
@@ -68,7 +68,7 @@ Our advanced algorithm aims to standardize different products by unifying conten
 - Weekly updates from various sources
 - Generation of BB UID for universal content tracking
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/aim-schemas.md).
 
 ### Updates & Coverage
 - Information is updated on a weekly basis
@@ -85,7 +85,7 @@ Discover HITS, our groundbreaking DEMAND metric, a composite indicator designed 
 - Enhanced with BB Media's intelligent metadata
 - Country-level data for precise analytics
  
-🚀 For more information on schemas and to access our S3 buckets, please [click here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/hits-schemas.md).
 
 ### Updates & Coverage
 - Frequent updates to reflect dynamic content demand
@@ -102,7 +102,7 @@ Gain insights into how streaming platforms expand their user base through bundli
 - Detailed analysis of commercial alliances and bundles
 - Frequent updates capturing changes in offers, devices, and functionalities
   
-🚀 For more information on schemas and to access our S3 buckets, please [click here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/ppb-schemas.md).
  
 ### Updates & Coverage
 - Real-time data updates to stay ahead in the market
@@ -111,6 +111,7 @@ Gain insights into how streaming platforms expand their user base through bundli
 👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
 ## Platform Essentials
+<<Info Here!>>
 
 ## Content Tracker & Upcoming Titles
 Stay ahead of the curve with our Content Tracker & Upcoming Titles service, meticulously curated to follow the lifecycle of content. Our analysts work tirelessly, sourcing information from Official Press Rooms and monitoring relevant news daily to provide comparative insights. We integrate normalized variables into our interactive databases for a streamlined experience.
@@ -121,7 +122,7 @@ Stay ahead of the curve with our Content Tracker & Upcoming Titles service, meti
 - Integration of normalized data for comparative analysis
 - Interactive databases with the latest content updates
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/ct-schemas.md).
 
 ### Updates & Coverage
 - Weekly updates to keep you informed about the latest developments
@@ -138,7 +139,7 @@ Explore the breadth of live streaming and FAST channels with BB Media's dual-lev
 - Analysis of leading web-based FAST streaming services
 - Identification of major sports leagues and teams
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/ls-schemas.md).
 
 ### Updates & Coverage
 - Regular updates to directory and programming analysis
@@ -154,7 +155,7 @@ Our Awards tracking service monitors over 140 accolades in the audiovisual indus
 - Insight into award-winning and nominated movies, series, and talents
 - Data integration with streaming availability for comprehensive platform insights
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/awards-schemas.md).
 
 ### Updates & Coverage
 - Regular updates following major award announcements
@@ -169,7 +170,7 @@ Stay on top of trending lists with our Top Ten service, which analyzes popular p
 - Regular updates on top ten lists from major streaming platforms
 - Focus on popular platforms such as Netflix, Amazon Prime Video, and Disney+
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/top-ten-schemas.md).
 
 ### Updates & Coverage
 - Weekly updates to ensure the most current content rankings
@@ -186,7 +187,7 @@ Our Screengrabs service offers a customized client experience, capturing screens
 - Advanced algorithm for navigating platform interfaces
 - Collection of data on carousel and item positions within the platform
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/screengrabrs-schemas.md).
 
 ### Updates & Coverage
 - Frequent updates to adapt to platform changes and new features
