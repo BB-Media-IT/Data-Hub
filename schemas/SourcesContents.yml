@@ -1,0 +1,246 @@
+SourcesContents:
+  type: object
+  properties:
+    UID:
+      description: Universal BB ID.
+      type: string
+    Source:
+      description: Source of the metadata.
+      type: string
+      enum:
+        - bb
+        - imdb
+        - tmdb
+        - eidr
+        - douban
+        - kinopoisk
+    Id:
+      description: ID in the external database.
+      type: string
+      example: tt13443470
+    Title:
+      type: string
+    OriginalTitle:
+      type: string
+      nullable: true
+    Year:
+      type: integer
+      nullable: true
+    Directors:
+      type: array
+      items:
+        type: string
+      nullable: true
+    CreatedBy:
+      type: array
+      items:
+        type: string
+      nullable: true
+    Cast:
+      type: array
+      nullable: true
+      items:
+        type: string
+    Crew:
+      type: array
+      nullable: true
+      items:
+          type: object
+          properties:
+            Name:
+              type: string
+              nullable: true
+            Role:
+              type: string
+              nullable: true
+    Akas:
+      type: array
+      nullable: true
+      items:
+          type: object
+          properties:
+            Language:
+              type: string
+              nullable: true
+            Region:
+              type: string
+              nullable: true
+            Title:
+              type: string
+    Country:
+      description: List of production countries.
+      type: array
+      items:
+        type: string
+      nullable: true
+    Companies:
+      type: array
+      items:
+          type: object
+          properties:
+            Country:
+              type: string
+              nullable: true
+            Name:
+              type: string
+            Type:
+              type: string
+              enum:
+                - Production
+                - Distributor
+                - Network
+                - Others
+              nullable: true
+      nullable: true
+    Synopsis:
+      type: array
+      items:
+          type: object
+          properties:
+            Region:
+              type: string
+              nullable: true
+            Language:
+              type: string
+              nullable: true
+            Description:
+              type: string
+      nullable: true
+    Images:
+      type: array
+      items:
+          type: object
+          properties:
+            Type:
+              type: string
+              nullable: true
+              enum:
+                - Poster
+                - Backdrop
+                - Thumbnail
+                - Logo
+            Language:
+              type: string
+              nullable: true
+            URL:
+              type: string
+            BBURL:
+              type: string
+      nullable: true
+    Videos:
+      description: Trailers or other promotional videos.
+      type: array
+      items:
+          type: object
+          properties:
+            Provider:
+              type: string
+              nullable: true
+            Id:
+              type: string
+              nullable: true
+            Language:
+              type: string
+              nullable: true
+            Type:
+              type: string
+              nullable: true
+      nullable: true
+    Languages:
+      type: array
+      items:
+        type: string
+      nullable: true
+    ReleaseYears:
+      description: List of release years by territory.
+      type: array
+      items:
+          type: object
+          properties:
+            Country:
+              type: string
+            Year:
+              type: integer
+      nullable: true
+    ReleaseDate:
+      type: string
+      nullable: true
+    Duration:
+      type: integer
+      nullable: true
+    Genres:
+      type: array
+      nullable: true
+      items:
+        type: string
+    Homepage:
+      type: string
+      nullable: true
+    Keywords:
+      type: array
+      nullable: true
+      items:
+        type: string
+    Status:
+      type: string
+      enum:
+        - Planned
+        - Pilot
+        - In Production
+        - Returning
+        - Canceled
+        - Ended
+      nullable: true
+    Type:
+      type: string
+      enum:
+        - Movie
+        - Tv Show
+        - Episode
+    IsAdult:
+      type: boolean
+      nullable: true
+    Franchise:
+      type: string
+      nullable: true
+    Scripted:
+      type: boolean
+      nullable: true
+    Seasons:
+      type: array
+      items:
+        type: object
+        properties:
+          Number:
+            description: Season number.
+            type: integer
+            nullable: true
+          Episodes:
+            description: Number of episodes in the season.
+            type: integer
+            nullable: true
+          Year:
+            type: integer
+            nullable: true
+          SeasonId:
+            type: integer
+            nullable: true
+          Title:
+            type: string
+      nullable: true
+    Rating:
+      description: Age rating.
+      type: array
+      items:
+        type: string
+      nullable: true
+    CreatedAt:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z
+      description: Indicates when the record was created in our database.
+    UpdatedAt:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z
+      description: Indicates when the record was updated in our database.

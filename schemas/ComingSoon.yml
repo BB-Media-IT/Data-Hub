@@ -1,0 +1,148 @@
+ComingSoon:
+  type: object
+  properties:
+    PlatformId:
+      type: integer
+      description: >
+        ID for the platform. The ID refers to the platform across
+        all available territories.
+    PlatformCode:
+      type: string
+      description: Code identifying the platform and the territory.
+      example: us.netflix
+    PlatformName:
+      type: string
+      description: Official name of the platform.
+    PlatformCountry:
+      type: string
+      description: Country ISO 3166-1 alpha-2 code.
+      example: IE
+    Title:
+      type: string
+    AvailabilityDay:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z
+    URL:
+      type: string
+    Year:
+      nullable: true
+      type: integer
+      description: Original release year.
+    Classification:
+      nullable: true
+      description: >
+        Incoming title classification. Possible values:
+          premiere: Titles reasing this year.
+          returning: New episodes or season for an existing series.
+          library: Older titles that become available on the platform.
+      type: string
+      enum:
+        - premiere
+        - returning
+        - library
+    UID:
+      type: string
+      description: Hash identifying the movie or series universally.
+      example: 3037d326dcfb6bf35f72b09edfb5b114
+      nullable: true
+    ExternalIds:
+      type: array
+      nullable: true
+      description: >
+        IDs from external databases that are mapped to the UID assigned
+        to the movie or series.
+      items:
+        type: object
+        properties:
+          Provider:
+            type: string
+            enum:
+              - imdb
+              - tmdb
+              - tvdb
+              - eidr
+          ID:
+            type: string
+          Type:
+            type: string
+            description: >
+              Type defined in the external database. It may not match to the
+              type defined in the platform. For example, a 'Movie' in a platform
+              may be classified as an 'Episode' in an external database.
+            enum:
+              - Movie
+              - Tv Show
+              - Episode
+    Type:
+      type: string
+      description: The content type as it is assigned by the platform.
+      enum:
+        - Movie
+        - Tv Show
+    ReleaseType:
+      type: string
+      description: >
+        Indicates the cadence of episode releases. Possible values are:
+        All At Once - the complete season is made available at the same time.
+        Daily - episodes are released daily.
+        Weekly - episodes are released weekly.
+        Weekly (Preview) - the first two episodes are released simultaneously,
+        the rest on a weekly basis.
+      nullable: true
+      enum:
+        - All At Once
+        - Daily
+        - Weekly
+        - Weekly (Preview)
+    Seasons:
+      type: array
+      items:
+        type: object
+        properties:
+          Number:
+            type: integer
+            nullable: true
+            description: Season number.
+          Episodes:
+            type: integer
+            nullable: true
+            description: Number of episodes in the season.
+    Source:
+      type: string
+      description: News article URL that is the source for the data.
+    Duration:
+      type: integer
+      nullable: true
+      description: The content runtime in minutes.
+    IsOriginal:
+      type: boolean
+      nullable: true
+      description: Indicates whether the show is original to the platform.
+    Genres:
+      type: array
+      nullable: true
+      items:
+        type: string
+    Themes:
+      type: array
+      nullable: true
+      description: Similar to `Genres` but describes with more detail the content of the show.
+      items:
+        type: string
+    ProductionCountries:
+      type: array
+      nullable: true
+      items:
+        type: string
+        description: ISO code alpha-2 of the production country.
+    ProductionCompanies:
+      type: array
+      nullable: true
+      items:
+        type: string
+        description: Name of the company involved in production.
+    CreatedAt:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z

@@ -1,0 +1,84 @@
+ScrapingStats:
+  type: object
+  properties:
+    PlatformId:
+      type: integer
+      description: >
+        ID for the platform. The ID refers to the platform across
+        all available territories.
+    PlatformCode:
+      type: string
+      description: Code identifying the platform and the territory.
+      example: us.netflix
+    PlatformName:
+      type: string
+      description: Official name of the platform.
+    PlatformCountry:
+      type: string
+      description: Country ISO 3166-1 alpha-2 code.
+      example: IE
+    NullRate:
+      type: array
+      description: >
+        Shows the rate of null values in each mandatory variable across the
+        whole dataset of the platform in that day, grouped by content type.
+      items:
+        type: object
+        properties:
+          Type:
+            type: string
+            enum:
+              - Movie
+              - Tv Show
+              - Episode
+          Fields:
+            type: object
+            properties:
+              FieldName:
+                type: number
+                nullable: true
+    LastUpdates:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z
+    Total:
+      type: array
+      description: Total count of each available content type.
+      items:
+        type: object
+        properties:
+          Type:
+            type: string
+            enum:
+              - Movie
+              - Tv Show
+              - Episode
+          Count:
+            type: integer
+    Match:
+      type: array
+      description: Match rate grouped by provider (external database).
+      items:
+        type: object
+        properties:
+          Type:
+            type: string
+            enum:
+              - Movie
+              - Tv Show
+              - Episode
+          Provider:
+            type: string
+            enum:
+              - imdb
+              - tmdb
+              - tvdb
+              - eidr
+          Count:
+            type: integer
+          Rate:
+            type: number
+    CreatedAt:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z
