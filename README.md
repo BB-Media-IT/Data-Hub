@@ -1,31 +1,67 @@
+<p align="center">
 <image
   src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/boards/files/183060432.png?x-amz-meta-iv=1&x-amz-meta-ck=cd20ea812f8ae161523111afa5aea5e8&AWSAccessKeyId=AKIAWCDCF6QSLTS7LRWT&Expires=1717200000&Signature=90X61ZsbGe2EneL7IRbEzerj7Oc%3D"
-  height=100
+  height=150
   margin=0>
-
+</p>
+  
 # BB Media
 
 Award Winning Data Science Company, specialized in Media & Entertainment for over 36 years. 
 We study how markets evolve in any of their formats and screens, developing primary survey methodologies for linear and non-linear measurement of content.
 We are focused. We are experts. We innovate. We act fast. We are thorough. We deliver.
 
+<p align="center">
 <image
   src="https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/46558862-529d-4dec-a7a8-7d956fec88f3"
   height=80
   margin=0>
-
+</p>
+  
 ## BB Media's main customers
 ![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/c2df7aca-cf33-4006-9541-3256c1f97abd)
 
-## BB Media Coverage
+## BB Media coverage
 
 ![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/8c82551a-5f0c-4fd0-b730-1efb86fd0ed5)
 
+## Data Hub
+- [Streaming Availability](#streaming-availability)
+- [Audio Visual Identifier & Metadata](#audio-visual-identifier--metadata)
+- [Hits](#hits)
+- [Platforms, Plans & Bundles](#platforms-plans--bundles)
+- [Platform Essentials](#platform-essentials)
+- [Content Tracker & Upcoming Titles](#content-tracker--upcoming-titles)
+- [Livestreaming & Fast Channels](#livestreaming--fast-channels)
+- [Awards](#awards)
+- [Top Ten](#top-ten)
+  
+## Streaming Availability
+## Audio Visual Identifier & Metadata
+## Hits
+## Platforms, Plans & Bundles
+## Platform Essentials
+## Content Tracker & Upcoming Titles
+## Livestreaming & Fast Channels
+## Awards
+## Top Ten
 
-## Data Hub by BB Media
+## Streaming Availability
+Discover a comprehensive database of movies, series, and episodes available on-demand (OD) across various countries and streaming services. Our offering includes a detailed breakdown of business models such as SVOD, AVOD, TVOD, and TVE. 'Content Pulse' provides normalized metadata, while 'Streaming Availability' offers raw data, showcasing how each service communicates its content with universal IDs and enriched with BB Media’s intelligent metadata.
 
+### Features
+- On-demand availability across countries and services
+- Breakdown by business model: SVOD, AVOD, TVOD, TVE
+- Real-time updates on content offerings
+- BB UID: a unique identifier for streamlined content tracking
 
+For more information on schemas and to access our S3 buckets, please [insert link here].
 
+### Updates & Coverage
+- Data is updated weekly
+- Covers a vast range of countries globally
+
+For full details on our update schedule and coverage, refer to our General Information Sheet [insert link here].
 
 
 ## AWS S3 Object Listing & Download Script
