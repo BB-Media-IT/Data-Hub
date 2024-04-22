@@ -1,7 +1,7 @@
 <p align="center">
 <image
   src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/boards/files/183060432.png?x-amz-meta-iv=1&x-amz-meta-ck=cd20ea812f8ae161523111afa5aea5e8&AWSAccessKeyId=AKIAWCDCF6QSLTS7LRWT&Expires=1717200000&Signature=90X61ZsbGe2EneL7IRbEzerj7Oc%3D"
-  height=150
+  height=200
   margin=0>
 </p>
   
@@ -13,7 +13,7 @@ We are focused. We are experts. We innovate. We act fast. We are thorough. We de
 <p align="center">
 <image
   src="https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/46558862-529d-4dec-a7a8-7d956fec88f3"
-  height=80
+  height=120
   margin=0>
 </p>
   
