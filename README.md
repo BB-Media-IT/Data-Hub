@@ -20,7 +20,7 @@ We are focused. We are experts. We innovate. We act fast. We are thorough. We de
 ## Companies thath trust in us
 ![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/c2df7aca-cf33-4006-9541-3256c1f97abd)
 
-## BB MEDIA COVERAGE
+## BB Media coverage
 
 ![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/8c82551a-5f0c-4fd0-b730-1efb86fd0ed5)
 
@@ -78,7 +78,7 @@ Our advanced algorithm aims to standardize different products by unifying conten
 ## Hits
 Discover HITS, our groundbreaking DEMAND metric, a composite indicator designed to gauge content demand and popularity across markets and streaming services. This country-level data is enhanced with BB Media's intelligent metadata for an unmatched analytics experience.
 
-## Features
+### Features
 - Innovative DEMAND metric for content popularity
 - Composite indicator across markets and streaming services
 - Enhanced with BB Media's intelligent metadata
@@ -86,13 +86,28 @@ Discover HITS, our groundbreaking DEMAND metric, a composite indicator designed 
  
 🚀 For more information on schemas and to access our S3 buckets, please [click here].
 
-## Updates & Coverage
+### Updates & Coverage
 - Frequent updates to reflect dynamic content demand
 - Data scope covers a multitude of countries and services
 
 👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
 ## Platforms, Plans & Bundles
+Gain insights into how streaming platforms expand their user base through bundling with companies in every market. Expose their commercial strategies by monitoring real-time data on Prices, Plans, Commercial Alliances (bundles), Offers, Devices, and Functionalities. Includes screenshots capturing all surveyed variables and any changes observed.
+
+### Features
+- Insight into streaming platform growth strategies
+- Real-time monitoring of prices and plans
+- Detailed analysis of commercial alliances and bundles
+- Frequent updates capturing changes in offers, devices, and functionalities
+  
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
+ 
+### Updates & Coverage
+- Real-time data updates to stay ahead in the market
+- In-depth coverage of streaming platforms worldwide
+
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
 ## Platform Essentials
 ## Content Tracker & Upcoming Titles
