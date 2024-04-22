@@ -26,6 +26,10 @@ We are focused. We are experts. We innovate. We act fast. We are thorough. We de
 ![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/8c82551a-5f0c-4fd0-b730-1efb86fd0ed5)
 
 ## Data Hub
+Welcome to your go-to resource for media insights and data analytics, housed securely in our S3 Data Lake! Our Data Hub serves as a central repository for comprehensive data and in-depth analysis across a spectrum of streaming services and media content. Whether you're diving into market trends, scouting for content availability, or exploring strategic media insights, our Data Hub provides a suite of projects tailored to meet a diverse range of needs within the media landscape.
+
+Here's what you can find in our S3-hosted Data Hub:
+
 - [Streaming Availability](#streaming-availability)
 - [Audio Visual Identifier & Metadata](#audio-visual-identifier--metadata)
 - [Hits](#hits)
@@ -35,16 +39,6 @@ We are focused. We are experts. We innovate. We act fast. We are thorough. We de
 - [Livestreaming & Fast Channels](#livestreaming--fast-channels)
 - [Awards](#awards)
 - [Top Ten](#top-ten)
-  
-## Streaming Availability
-## Audio Visual Identifier & Metadata
-## Hits
-## Platforms, Plans & Bundles
-## Platform Essentials
-## Content Tracker & Upcoming Titles
-## Livestreaming & Fast Channels
-## Awards
-## Top Ten
 
 ## Streaming Availability
 Discover a comprehensive database of movies, series, and episodes available on-demand (OD) across various countries and streaming services. Our offering includes a detailed breakdown of business models such as SVOD, AVOD, TVOD, and TVE. 'Content Pulse' provides normalized metadata, while 'Streaming Availability' offers raw data, showcasing how each service communicates its content with universal IDs and enriched with BB Media’s intelligent metadata.
@@ -63,6 +57,14 @@ For more information on schemas and to access our S3 buckets, please [insert lin
 
 For full details on our update schedule and coverage, refer to our General Information Sheet [insert link here].
 
+## Audio Visual Identifier & Metadata
+## Hits
+## Platforms, Plans & Bundles
+## Platform Essentials
+## Content Tracker & Upcoming Titles
+## Livestreaming & Fast Channels
+## Awards
+## Top Ten
 
 ## AWS S3 Object Listing & Download Script
 
