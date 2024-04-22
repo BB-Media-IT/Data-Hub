@@ -38,6 +38,7 @@ Here's what you can find in our S3-hosted Data Hub:
 - [Livestreaming & Fast Channels](#livestreaming--fast-channels)
 - [Awards](#awards)
 - [Top Ten](#top-ten)
+- [Screengrabrs](#tscreengrabrs)
 
 👋 For more products or information, please feel free to [click here](mailto:hello@bb-media.com)! We'd love to help you.
 
@@ -110,68 +111,85 @@ Gain insights into how streaming platforms expand their user base through bundli
 👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
 ## Platform Essentials
+
 ## Content Tracker & Upcoming Titles
+Stay ahead of the curve with our Content Tracker & Upcoming Titles service, meticulously curated to follow the lifecycle of content. Our analysts work tirelessly, sourcing information from Official Press Rooms and monitoring relevant news daily to provide comparative insights. We integrate normalized variables into our interactive databases for a streamlined experience.
+
+### Features
+- Comprehensive tracking of content lifecycle
+- Daily monitoring of official press releases and relevant news
+- Integration of normalized data for comparative analysis
+- Interactive databases with the latest content updates
+
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
+
+### Updates & Coverage
+- Weekly updates to keep you informed about the latest developments
+- Wide-ranging insights into upcoming content across various platforms
+
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
+
 ## Livestreaming & Fast Channels
+Explore the breadth of live streaming and FAST channels with BB Media's dual-level analysis. First, we provide a comprehensive directory of existing channels, essential variables, and keywords. Next, we delve into the programming of leading web-based FAST streaming services, identifying major sports leagues and teams.
+
+### Features
+- Extensive directory of live streaming channels
+- Keyword and essential variable tracking for quick searches
+- Analysis of leading web-based FAST streaming services
+- Identification of major sports leagues and teams
+
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
+
+### Updates & Coverage
+- Regular updates to directory and programming analysis
+- Focus on key sports leagues and teams for targeted insights
+
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
+
 ## Awards
+Our Awards tracking service monitors over 140 accolades in the audiovisual industry to reveal the winners and nominees among movies, series, actors, and actresses. This data is blended with streaming availability information to pinpoint which platforms feature these acclaimed titles.
+
+### Features
+- Tracking of over 140 audiovisual industry awards
+- Insight into award-winning and nominated movies, series, and talents
+- Data integration with streaming availability for comprehensive platform insights
+
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
+
+### Updates & Coverage
+- Regular updates following major award announcements
+- Cross-referenced data for accurate platform availability
+
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
+
 ## Top Ten
+Stay on top of trending lists with our Top Ten service, which analyzes popular platforms such as Netflix, Amazon Prime Video and Disney+. Understand what's capturing audience attention with current rankings.
 
-## AWS S3 Object Listing & Download Script
+### Features
+- Regular updates on top ten lists from major streaming platforms
+- Focus on popular platforms such as Netflix, Amazon Prime Video, and Disney+
 
-This script connects to an S3-compatible storage (like Digital Ocean Spaces) to list and download objects based on certain prefixes.
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
 
-## Requirements
-- Python 3
-- `boto3` library
-- A configuration file (`config.cfg`) with necessary credentials and parameters.
+### Updates & Coverage
+- Weekly updates to ensure the most current content rankings
+- Detailed insights into the performance of top content across various platforms
 
-## Configuration File (`config.cfg`)
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
-The configuration file should have sections and keys for the AWS/Digital Ocean (or any S3-compatible storage) configurations as well as for defining prefixes and download paths. 
 
-Structure:
-```
-[aws_digital_ocean]
-REGION_NAME = Copy the one we provide 
-ENDPOINT = Copy the one we provide
-ACCESS_ID = Copy the one we provide
-SECRET_KEY = Copy the one we provide
-BUCKET = Copy the one we provide
+## Screengrabrs
+Our Screengrabs service offers a customized client experience, capturing screens across platforms. Our algorithm navigates the interface, taking snapshots and traversing carousels to gather critical information such as carousel and item positioning.
 
-[prefix_buckets]
-CONTENTS = Content/latest
-EPISODES = Episodes/latest
-STATS = Stats/latest
-SOURCE = Stats/latest
+### Features
+- Customized screengrab capabilities across multiple platforms
+- Advanced algorithm for navigating platform interfaces
+- Collection of data on carousel and item positions within the platform
 
-[paths]
-CONTENTS = Datos/Contents
-EPISODES = Datos/Episodes
-STATS = Datos/Stats
-SOURCES = Datos/Sources
-```
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
 
-## How It Works
+### Updates & Coverage
+- Frequent updates to adapt to platform changes and new features
+- Comprehensive data collection from various streaming services
 
-1. **Variable Collection:** The script starts by reading the `config.cfg` file and obtaining the necessary configurations.
-
-2. **Connection Configuration:** The script establishes a connection to the S3 compatible storage.
-
-3. **Pagination Activation:** Uses paginator to list all objects in the specified bucket.
-
-4. **List Prefix:** It lists all objects based on the specified prefixes in the configuration file.
-
-5. **Download Files:** All objects listed will be downloaded to specified paths based on their prefixes. The script ensures that the directories exist; if not, it creates them.
-
-## How to Run
-1. Ensure you have the necessary dependencies installed, mainly `boto3`.
-2. Update the `config.cfg` file with the required configurations.
-3. Run the script.
-
-## Notes
-Remember to never commit your `config.cfg` with sensitive credentials to a public repository.
-
-## Schedule
-You can create a .sh, .bat, or any required file and run it with an orchestrator or just with a crontab.
-
-Example:
-At 12:00 on Saturday: `0 12 * * 6`
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
