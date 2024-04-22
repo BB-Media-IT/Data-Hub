@@ -39,6 +39,8 @@ Here's what you can find in our S3-hosted Data Hub:
 - [Awards](#awards)
 - [Top Ten](#top-ten)
 
+👋 For more products or information, please feel free to [click here](mailto:hello@bb-media.com)! We'd love to help you.
+
 ## Streaming Availability
 Discover a comprehensive database of movies, series, and episodes available on-demand (OD) in more than 200 regions. Our offering includes a detailed breakdown of business models such as SVOD, AVOD, TVOD, and TVE. ['Content Pulse'](https://bb-media.com/streaming/) provides normalized metadata, while 'Streaming Availability' offers raw data, showcasing how each service communicates its content with universal IDs and enriched with BB Media’s intelligent metadata.
 
@@ -51,10 +53,10 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 🚀 For more information on schemas and to access our S3 buckets, please [click here].
 
 ### Updates & Coverage
-- Data is updated weekly
+- Data is updated daily and weekly
 - Covers a vast range of countries globally
 
-🌟 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.🌟
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
 ## Audiovisual Identifier & Metadata
 Our advanced algorithm aims to standardize different products by unifying content identifiers, allowing for streamlined metadata across our offerings. Updated weekly, it gathers information from various sources to generate our universal identification code known as BB UID.
@@ -71,7 +73,7 @@ Our advanced algorithm aims to standardize different products by unifying conten
 - Information is updated on a weekly basis
 - Comprehensive collection from multiple sources to ensure accuracy and relevance
 
-🌟 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.🌟
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
 ## Hits
 Discover HITS, our groundbreaking DEMAND metric, a composite indicator designed to gauge content demand and popularity across markets and streaming services. This country-level data is enhanced with BB Media's intelligent metadata for an unmatched analytics experience.
@@ -88,9 +90,10 @@ Discover HITS, our groundbreaking DEMAND metric, a composite indicator designed 
 - Frequent updates to reflect dynamic content demand
 - Data scope covers a multitude of countries and services
 
-🌟 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.🌟
-  
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
+
 ## Platforms, Plans & Bundles
+
 ## Platform Essentials
 ## Content Tracker & Upcoming Titles
 ## Livestreaming & Fast Channels
