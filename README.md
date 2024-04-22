@@ -1,4 +1,34 @@
-# AWS S3 Object Listing & Download Script
+<image
+  src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/boards/files/183060432.png?x-amz-meta-iv=1&x-amz-meta-ck=cd20ea812f8ae161523111afa5aea5e8&AWSAccessKeyId=AKIAWCDCF6QSLTS7LRWT&Expires=1717200000&Signature=90X61ZsbGe2EneL7IRbEzerj7Oc%3D"
+  height=100
+  margin=0>
+
+# BB Media
+
+Award Winning Data Science Company, specialized in Media & Entertainment for over 36 years. 
+We study how markets evolve in any of their formats and screens, developing primary survey methodologies for linear and non-linear measurement of content.
+We are focused. We are experts. We innovate. We act fast. We are thorough. We deliver.
+
+<image
+  src="https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/46558862-529d-4dec-a7a8-7d956fec88f3"
+  height=80
+  margin=0>
+
+## BB Media's main customers
+![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/c2df7aca-cf33-4006-9541-3256c1f97abd)
+
+## BB Media Coverage
+
+![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/8c82551a-5f0c-4fd0-b730-1efb86fd0ed5)
+
+
+## Data Hub by BB Media
+
+
+
+
+
+## AWS S3 Object Listing & Download Script
 
 This script connects to an S3-compatible storage (like Digital Ocean Spaces) to list and download objects based on certain prefixes.
 
