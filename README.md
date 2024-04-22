@@ -47,16 +47,14 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 - Breakdown by business model: SVOD, AVOD, TVOD, TVE
 - Daily and weekly updates of the content offering
 - BB UID: a unique identifier for streamlined content tracking
-
-[Schema, Modeling & Access](https://google.com)
-
-For more information please [insert link here].
-
+- 
 ### Updates & Coverage
 - Data is updated weekly
 - Covers a vast range of countries globally
 
-For full details on our update schedule and coverage, refer to our General Information Sheet [insert link here].
+[Schema, Modeling & Access](https://google.com)
+
+🌟 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's Unlock Amazing Deals Together!)! We'd love to help you.🌟
 
 ## Audiovisual Identifier & Metadata
 
