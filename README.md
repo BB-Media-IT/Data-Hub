@@ -5,8 +5,7 @@
   margin=0>
 </p>
   
-# BB Media
-
+# BB MEDIA
 Award Winning Data Science Company, specialized in Media & Entertainment for over 36 years. 
 We study how markets evolve in any of their formats and screens, developing primary survey methodologies for linear and non-linear measurement of content.
 We are focused. We are experts. We innovate. We act fast. We are thorough. We deliver.
@@ -18,20 +17,20 @@ We are focused. We are experts. We innovate. We act fast. We are thorough. We de
   margin=0>
 </p>
   
-## BB Media's main customers
+## COMPANIES THAT TRUST IN US
 ![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/c2df7aca-cf33-4006-9541-3256c1f97abd)
 
-## BB Media coverage
+## BB MEDIA COVERAGE
 
 ![image](https://github.com/BB-Media-IT/ClientScriptHub/assets/4085605/8c82551a-5f0c-4fd0-b730-1efb86fd0ed5)
 
-## Data Hub
+## DATA HUB
 Welcome to your go-to resource for media insights and data analytics, housed securely in our S3 Data Lake! Our Data Hub serves as a central repository for comprehensive data and in-depth analysis across a spectrum of streaming services and media content. Whether you're diving into market trends, scouting for content availability, or exploring strategic media insights, our Data Hub provides a suite of projects tailored to meet a diverse range of needs within the media landscape.
 
 Here's what you can find in our S3-hosted Data Hub:
 
 - [Streaming Availability](#streaming-availability)
-- [Audio Visual Identifier & Metadata](#audio-visual-identifier--metadata)
+- [Audiovisual Identifier & Metadata](#audiovisual-identifier--metadata)
 - [Hits](#hits)
 - [Platforms, Plans & Bundles](#platforms-plans--bundles)
 - [Platform Essentials](#platform-essentials)
@@ -57,7 +56,24 @@ For more information on schemas and to access our S3 buckets, please [insert lin
 
 For full details on our update schedule and coverage, refer to our General Information Sheet [insert link here].
 
-## Audio Visual Identifier & Metadata
+## Audiovisual Identifier & Metadata
+
+Our advanced algorithm aims to standardize different products by unifying content identifiers, allowing for streamlined metadata across our offerings. Updated weekly, it gathers information from various sources to generate our universal identification code known as BB UID.
+
+### Features
+- Standardization of content identifiers
+- Streamlined metadata for easy integration
+- Weekly updates from various sources
+- Generation of BB UID for universal content tracking
+
+For more information on schemas and to access our S3 buckets, please [insert link here].
+
+### Updates & Coverage
+- Information is updated on a weekly basis
+- Comprehensive collection from multiple sources to ensure accuracy and relevance
+
+For full details on our update schedule and coverage, refer to our General Information Sheet [insert link here].
+
 ## Hits
 ## Platforms, Plans & Bundles
 ## Platform Essentials
