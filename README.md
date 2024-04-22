@@ -47,17 +47,16 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 - Breakdown by business model: SVOD, AVOD, TVOD, TVE
 - Daily and weekly updates of the content offering
 - BB UID: a unique identifier for streamlined content tracking
-- 
+  
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
+
 ### Updates & Coverage
 - Data is updated weekly
 - Covers a vast range of countries globally
 
-[Schema, Modeling & Access](https://google.com)
-
-🌟 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's Unlock Amazing Deals Together!)! We'd love to help you.🌟
+🌟 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.🌟
 
 ## Audiovisual Identifier & Metadata
-
 Our advanced algorithm aims to standardize different products by unifying content identifiers, allowing for streamlined metadata across our offerings. Updated weekly, it gathers information from various sources to generate our universal identification code known as BB UID.
 
 ### Features
@@ -66,15 +65,31 @@ Our advanced algorithm aims to standardize different products by unifying conten
 - Weekly updates from various sources
 - Generation of BB UID for universal content tracking
 
-For more information on schemas and to access our S3 buckets, please [insert link here].
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
 
 ### Updates & Coverage
 - Information is updated on a weekly basis
 - Comprehensive collection from multiple sources to ensure accuracy and relevance
 
-For full details on our update schedule and coverage, refer to our General Information Sheet [insert link here].
+🌟 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.🌟
 
 ## Hits
+Discover HITS, our groundbreaking DEMAND metric, a composite indicator designed to gauge content demand and popularity across markets and streaming services. This country-level data is enhanced with BB Media's intelligent metadata for an unmatched analytics experience.
+
+## Features
+- Innovative DEMAND metric for content popularity
+- Composite indicator across markets and streaming services
+- Enhanced with BB Media's intelligent metadata
+- Country-level data for precise analytics
+ 
+🚀 For more information on schemas and to access our S3 buckets, please [click here].
+
+## Updates & Coverage
+- Frequent updates to reflect dynamic content demand
+- Data scope covers a multitude of countries and services
+
+🌟 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.🌟
+  
 ## Platforms, Plans & Bundles
 ## Platform Essentials
 ## Content Tracker & Upcoming Titles
