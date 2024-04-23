@@ -6,7 +6,7 @@
 </p>
   
 # BB Media
-Award Winning Data Science Company, specialized in Media & Entertainment for over 36 years. 
+Award Winning Data Science Company, specialized in Media & Entertainment for over 36 years.
 We study how markets evolve in any of their formats and screens, developing primary survey methodologies for linear and non-linear measurement of content.
 We are focused. We are experts. We innovate. We act fast. We are thorough. We deliver.
 
