@@ -1,0 +1,135 @@
+Channels:
+  title: PayloadChannel
+  type: object
+  properties:
+    PlatformNumberId:
+      type: integer
+      description: >
+        ID for the platform. The ID refers to the platform across
+        all available territories.
+      example: 12345
+    PlatformCountry:
+      type: string
+      description: Country ISO 3166-1 alpha-2 code.
+      example: US
+    PlatformCode:
+      type: string
+      description: Code identifying the platform and the territory.
+      example: ar.plutotv
+    CreatedAt:
+      type: string
+      description: Date when the data was scraped.
+      example: 2023-08-30
+    Timestamp:
+      type: date
+      format: date-time
+      description: Timestamp when the scraping started.
+      example: 2022-04-22T10:15:30Z
+    Id:
+      type: string
+      description: Channel ID either brought from the platform or hashed.
+      example: 5ad906bbca742027d10ffd32
+    Title:
+      type: string
+      description: Channel title.
+      example: TyC Sports
+    Type:
+      type: string
+      description: Channel type. Value assigned to the channel (not scraped).
+      example: TV
+    Deeplink:
+      type: string
+      description: Channel deeplink.
+      example: https://example.com/channel
+    Broadcast:
+      type: string
+      description: MRL link if found.
+      example: https://example.com/live/index.m3u8
+    Number:
+      type: integer
+      minimum: 1
+      description: Channel number if found.
+      example: 100
+    Images:
+      description: Channel images.
+      type: array
+      items:
+        type: object
+        properties:
+          Type:
+            type: string
+            description: Image type.
+            enum:
+              - Logo
+              - Generic
+            example: Logo
+          Url:
+            type: string
+            description: Direct URL for the image.
+            example: https://example.com/image.jpg
+    Genres:
+      type: array
+      description: Channel genres.
+      items:
+        type: string
+      example:
+        - News
+        - Sports
+    Subtitles:
+      type: array
+      description: Subtitles available.
+      example:
+        - English
+        - Spanish
+    Dubbed:
+      type: array
+      description: Spoken languages available.
+      example:
+        - French
+        - German
+    FullDay:
+      type: boolean
+      description: Channel has no schedule defined but has 24 hours transmission.
+    IsOriginal:
+      type: boolean
+      description: Platform original content.
+    IsAdult:
+      type: boolean
+      description: Adult content or with age restriction.
+    IsKids:
+      type: boolean
+      description: Kids content.
+    IsFast:
+      type: boolean
+      description: Provides FAST content. Value assigned to the channel (not scraped).
+      default: null
+    FastBy:
+      type: string
+      description: FAST type. Value assigned to the channel (not scraped).
+      default: null
+    Owner:
+      type: string
+      description: Channel owner. Value assigned to the channel (not scraped).
+    Packages:
+      description: Channel revenue model.
+      type: array
+      items:
+        type: object
+        properties:
+          Type:
+            type: string
+            description: The `vod` part is to keep consistency with codes across our data.
+            enum:
+              - free-vod
+              - subscription-vod
+              - validated-vod
+              - tv-everywhere
+    GMT:
+      type: integer
+      minimum: -12
+      maximum: 12
+      description: GMT timezone offset.
+      example: 3
+    IsActive:
+      type: boolean
+      description: Indicates whether the channel was found active during the scraping.
