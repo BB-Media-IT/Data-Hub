@@ -1,0 +1,105 @@
+Schedule:
+  title: PayloadSchedule
+  type: object
+  properties:
+    PlatformNumberId:
+      type: integer
+      description: >
+        ID for the platform. The ID refers to the platform across
+        all available territories.
+      example: 12345
+    PlatformCountry:
+      type: string
+      description: Country ISO 3166-1 alpha-2 code.
+      example: US
+    PlatformCode:
+      type: string
+      description: Code identifying the platform and the territory.
+      example: ar.plutotv
+    CreatedAt:
+      type: string
+      description: Date when the data was scraped.
+      example: 2023-08-30
+    Timestamp:
+      type: date
+      format: date-time
+      description: Timestamp when the scraping started.
+      example: 2022-04-22T10:15:30Z
+    Id:
+      type: string
+      description: Unique identifier for the payload schedule.
+      example: 634d81745911fb001dda09c0
+    ChannelId:
+      type: string
+      description: Unique identifier for the channel associated with the payload.
+      example: 5ad906bbca742027d10ffd33
+    ChannelTitle:
+      type: string
+      description: Title of the channel.
+      example: TyC Sports
+    ContentId:
+      type: string
+      description: Unique identifier for the content associated with the payload.
+    ContentTitle:
+      type: string
+      description: Resumen de la Liga
+    Type:
+      type: string
+      description: >
+        Type of the payload.
+        placeholder: No schedule data available.
+      enum:
+        - schedule
+        - placeholder
+      example: schedule
+    Subtitles:
+      type: array
+      items:
+        type: string
+      description: Subtitles available for the content.
+      example:
+        - English
+        - Spanish
+    Dubbed:
+      type: array
+      items:
+        type: string
+      description: Spoken languages available for the content.
+      example:
+        - French
+        - German
+    ClosedCaption:
+      type: boolean
+      description: Whether closed captions are available.
+    Accessibility:
+      type: boolean
+      description: Has accesibility options.
+    IsFast:
+      type: boolean
+      description: Whether the schedule's channel is FAST. Value assigned to the channel (not scraped).
+    StartDate:
+      type: date
+      format: date-time
+      description: Start time of the payload schedule.
+      example: 2022-04-22T10:15:30Z
+    EndDate:
+      type: date
+      format: date-time
+      description: End time of the payload schedule.
+      example: 2022-04-22T11:15:30Z
+    Duration:
+      type: integer
+      minimum: 1
+      description: Duration of the content in minutes.
+      example: 60
+    Seconds:
+      type: integer
+      minimum: 1
+      description: Duration of the content in seconds.
+      example: 3600
+    GMT:
+      type: integer
+      minimum: -12
+      maximum: 12
+      description: GMT timezone offset.
+      example: 3

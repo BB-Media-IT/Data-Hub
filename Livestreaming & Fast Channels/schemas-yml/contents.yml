@@ -1,0 +1,129 @@
+Content:
+  title: PayloadContent
+  type: object
+  properties:
+    PlatformNumberId:
+      type: integer
+      description: >
+        ID for the platform. The ID refers to the platform across
+        all available territories.
+      example: 12345
+    PlatformCountry:
+      type: string
+      description: Country ISO 3166-1 alpha-2 code.
+      example: US
+    PlatformCode:
+      type: string
+      description: Code identifying the platform and the territory.
+      example: ar.plutotv
+    CreatedAt:
+      type: string
+      description: Date when the data was scraped.
+      example: 2023-08-30
+    Timestamp:
+      type: date
+      format: date-time
+      description: Timestamp when the scraping started.
+      example: 2022-04-22T10:15:30Z
+    Id:
+      type: string
+      description: Unique identifier for the content.
+      example: 5ad906bbca742027d10ffd32
+    Title:
+      type: string
+      description: Title of the content.
+      example: Catchup on the League
+    Type:
+      type: string
+      description: >
+        Type of the content.
+        undefined: Type cannot be determined.
+        placeholder: No content data available.
+      enum:
+        - movie
+        - episode
+        - undefined
+        - placeholder
+      example: movie
+    Deeplink:
+      type: string
+      description: Deeplink for the content.
+      example: https://example.com/content
+    Year:
+      type: integer
+      minimum: 1870
+      maximum: <current_year>
+      description: Year of the content.
+      example: 2023
+    Synopsis:
+      type: string
+      description: Synopsis of the content.
+      minLength: 3
+      example: A gripping story about sports
+    Images:
+      type: array
+      items:
+        type: string
+      description: Images associated with the content.
+      example:
+        - https://example.com/image.jpg
+        - https://example.com/image2.jpg
+    Duration:
+      type: integer
+      minimum: 1
+      description: Duration of the content in minutes.
+      example: 120
+    Seconds:
+      type: integer
+      minimum: 1
+      description: Duration of the content in seconds.
+      example: 7200
+    Genres:
+      type: array
+      items:
+        type: string
+      description: Genres associated with the content.
+      example:
+        - Action
+        - Drama
+    Rating:
+      type: string
+      description: Content rating.
+      example: PG-13
+    OnDemand:
+      type: boolean
+      description: Whether the content is available on-demand.
+    IsAdult:
+      type: boolean
+      description: Whether the content is adult-oriented.
+    IsKids:
+      type: boolean
+      description: Whether the content is kids-oriented.
+    SerieTitle:
+      type: string
+      description: Title of the series if the content is part of a series.
+      example: Breaking Bad
+    Season:
+      type: integer
+      minimum: 0
+      description: Season number if the content is part of a series.
+      example: 1
+    Episode:
+      type: integer
+      minimum: 0
+      description: Episode number if the content is part of a series.
+      example: 1
+    Packages:
+      description: Revenue models assiciated with the content.
+      type: array
+      items:
+        type: object
+        properties:
+          Type:
+            type: string
+            description: The `vod` part is to keep consistency with codes across our data.
+            enum:
+              - free-vod
+              - subscription-vod
+              - validated-vod
+              - tv-everywhere
