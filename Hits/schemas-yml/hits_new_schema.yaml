@@ -1,0 +1,142 @@
+BBHits:
+  type: object
+  properties:
+    UID:
+      type: string
+      description: Hash identifying the movie or series universally
+      example: c4d8bb0055f0cf866ec6f5d16b5471c5
+      nullable: false
+    IMDBId:
+      type: string
+      description: ID coming from IMDB
+      example: tt13016388
+      nullable: false
+    TMDBId:
+      type: string
+      description: ID coming from TMDB
+      example: 108545
+      nullable: true
+    DateHits:
+      type: string
+      description: First day of the analyzed week
+      example: 2024-04-01
+      nullable: false
+    WeekOn:
+      type: integer
+      description: Week number of the year corresponding to the date the data is processed (1 to 52/53)
+      example: 14
+      nullable: false
+    YearOn:
+      type: integer
+      description: Year corresponding to the date the data is processed
+      example: 2024
+      nullable: false
+    Title:
+      type: string
+      description: Titles coming from IMDB
+      example: 3 Body Problem
+      nullable: false
+    Year:
+      type: integer
+      description: Year when the movie/series was released, coming from IMDB
+      example: 2024
+      nullable: true
+    Country:
+      type: string
+      description: Country where scores are calculated (ISO Alpha2 Code)
+      example: US
+      nullable: false
+    Type:
+      type: string
+      description: Content type 'Movie'/'Tv Show'
+      example: serie
+      nullable: false
+    Genre:
+      type: string
+      description: Title primary genre, most common genre in collaborative databases
+      example: Action
+      nullable: true
+    Scores:
+      type: array
+      description: 
+      example: [ { Source:Piracy, Score:100 }, { Source:Hits, Score:80 }, {Source:Twitter, Score:55}, ... ]
+      nullable: false
+      items:
+        type: object
+        nullable: false
+        properties:
+          Score:
+            type: numeric
+            nullable: true
+          Source:
+            type: string
+            nullable: false
+            description: >
+              Raw scores have no limits, others are standarized between 0-100. All scores are calculated in specific week.
+              Piracy: The number of views and downloads of title offered on pirate websites
+              Twitter: The number of published tweets (of public profiles with the users' location to determine the country) that include hashtags with the title of the content
+              Imdb: The number of votes registered on IMDB
+              Cdb: The number of views from collaborative databases (some websites are filmaffinity, letterboxd, sensacine)
+              Youtube: The number of weekly views of the first 10 videos related to the title
+              Hits: The weighted average of the different sources previously mentioned (20% Piracy + 15% Twitter + 10% Search Engine + 25% Collaborative DB Votes + 20% Collaborative DB Popularity + 10% Youtube)
+            enum:
+              - Piracy
+              - Twitter
+              - Imdb
+              - Cdb
+              - Youtube
+              - Hits
+              - PiracyRaw
+              - TwitterRaw
+              - ImdbRaw
+              - CdbRaw
+              - YoutubeRaw
+              - HitsRaw
+    Position:
+      type: integer
+      description: Title position inside current country and content type
+      example: 1
+      nullable: false
+    DeltaPositionInt:
+      type: integer
+      description: Position change from previous week to current, if title wasn't in previous week data, is null.
+      example: 3
+      nullable: true
+    Average:
+      type: numeric
+      description: Hits score average inside corresponding Country and Type
+      example: 1.55
+      nullable: false
+    HitsRelative:
+      type: numeric
+      description: (Hits score / Average)-1 , compare Hits score over Average, "how many times is Hits score over Average"
+      example: 63.66
+      nullable: false
+    HitsLocal:
+      type: numeric
+      description: >
+        Compare Hits score to the Hits score of the same title in its origin country. 
+        When Country is title origin country then HitsLocal is 100, if this title hast a better Hits score in another country then HitsLocal will be higher than 100,
+        if this title has a worse Hits score in another country then HitsLocal will be lower than 100.
+      example: 100
+      nullable: true
+    ReleaseDate:
+      type: string
+      description: Title release date in corresponding country
+      example: 2022-08-02
+      nullable: true
+    HitsCategory:
+      type: string
+      description: Category assigned to a title according to its Hits score ('Below Average'/'Average'/'Above Average'/'Outstanding'/'Unicorn')
+      example: Unicorn
+      nullable: false
+    TrendScore:
+      type: numeric
+      description: Relative score based on the difference between the moving averages of the last week and the previous 2 weeks, divided by the latter moving average
+      example: 1.888
+      nullable: true
+    TrendCategory:
+      type: string
+      description: Category assigned to a title according to its 'trend_score' score ('Negative Trend'/'Unchanging'/'Slight Trend'/'Average Trend'/'Trend'/'Strong Trend'/'Unicorn')
+      example: Average Trend
+      nullable: true
