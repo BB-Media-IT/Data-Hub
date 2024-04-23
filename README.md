@@ -51,7 +51,7 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 - Daily and weekly updates of the content offering
 - BB UID: a unique identifier for streamlined content tracking
   
-🚀 For more information on schemas and to access our S3 buckets, please [click here](/sa-schemas.md).
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/streaming-availability/sa-schemas.md).
 
 ### Updates & Coverage
 - Data is updated daily and weekly
@@ -68,7 +68,7 @@ Our advanced algorithm aims to standardize different products by unifying conten
 - Weekly updates from various sources
 - Generation of BB UID for universal content tracking
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here](/aim-schemas.md).
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/audiovisual-identifier--metadata/aim-schemas.md).
 
 ### Updates & Coverage
 - Information is updated on a weekly basis

@@ -1,7 +1,10 @@
 # Streaming Availability
-Discover a comprehensive database of movies, series, and episodes available on-demand (OD) in more than 200 regions. Our offering includes a detailed breakdown of business models such as SVOD, AVOD, TVOD, and TVE. ['Content Pulse'](https://bb-media.com/streaming/) provides normalized metadata, while 'Streaming Availability' offers raw data, showcasing how each service communicates its content with universal IDs and enriched with BB Media’s intelligent metadata.
 
-👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
+Welcome to our repository where you will find essential tools to manage **Streaming Availability** data. We offer:
+
+- [**Detailed Schemas**](#schema): Clear information about data attributes and properties.
+- [**Data Models**](#models): Facilitates the effective use of the data.
+- [**Practical Guides**](../tools/practical-guides.md): Useful way to access the data.
 
 ## Schema
 | Field                 | Type     | Description                                                                                                 | Example                  |
@@ -104,3 +107,8 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 | Deeplink  | string | Deeplink for the season (optional).                | https://www.example.com/season1 |
 | OtherIds  | array  | Other identifiers for the season.                  |                             |
 | Packages  | array  | Business models available within the season.        |                             |
+
+## Models
+---------------------------
+
+👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
