@@ -1,0 +1,144 @@
+ScrapingPlatforms:
+  type: object
+  properties:
+    PlatformId:
+      type: integer
+      description: >
+        ID for the platform. The ID refers to the platform across
+        all available territories.
+    PlatformType:
+      type: array
+      itemes:
+        type: string
+        enum:
+          - ott
+          - gaming
+          - live-streaming
+          - channel
+    PlatformCode:
+      type: string
+      description: Code identifying the platform and the territory.
+      example: us.netflix
+    OtherCodes:
+      type: array
+      items:
+        type: string
+      nullable: true
+      description: Codes that were previously used for the platform.
+    PlatformCountry:
+      type: string
+      description: Country ISO 3166-1 alpha-2 code.
+      example: IE
+    PlatformName:
+      type: string
+      description: Official name of the platform.
+    PlatformLaunchYear:
+      type: integer
+      nullable: true
+    CountryInfo:
+      type: object
+      properties:
+        Region:
+          type: string
+        SubRegion:
+          type: string
+        Name:
+          type: string
+        Code:
+          type: string
+          description: Country Code ISO 3166-1 alpha-2 code.
+    Currencies:
+      type: array
+      items:
+        type: object
+        properties:
+          Currency:
+            type: string
+          CurrencySymbol:
+            type: string
+          CurrencyName:
+            type: string
+    CreatedAt:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z
+    UpdatedAt:
+      type: string
+      format: date-time
+      example: 2017-07-21T17:32:28Z
+    Services:
+      type: array
+      items:
+        type: string
+        enum:
+          - content-pulse
+          - prices-plans-bundles
+          - platform-essentials
+          - ads
+    Status:
+      type: array
+      items:
+        type: object
+        properties:
+          Status:
+            type: string
+            enum:
+              - active
+              - inactive
+          Deadline:
+            type: string
+            format: date-time
+            description: The time when the platform survey data will be available.
+            example: 2017-07-31T23:59:59Z
+            nullable: true
+    IsActive:
+      type: boolean
+    Owners:
+      type: array
+      items:
+        type: string
+    Period:
+      type: integer
+      nullable: true
+    Priority:
+      type: string
+      enum:
+        - urgent
+        - high
+        - normal
+        - low
+    ContentAggregator:
+      type: boolean
+      nullable: true
+    PlatformLogos:
+      type: object
+      properties:
+        DLV:
+          type: string
+        Original:
+          type: string
+      nullable: true
+    Links:
+      type: object
+      properties:
+        iOS:
+          type: string
+          nullable: true
+        PlayStore:
+          type: string
+          nullable: true
+        Web:
+          type: string
+          nullable: true
+    Messages:
+      type: array
+      items:
+        type: object
+        properties:
+          Message:
+            type: string
+          CreatedAt:
+            type: string
+            format: date-time
+            example: 2017-07-21T17:32:28Z
+      nullable: true
