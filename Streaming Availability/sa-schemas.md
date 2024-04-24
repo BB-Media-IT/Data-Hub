@@ -26,7 +26,7 @@ Each of these folders contains a `latest` subfolder, which is periodically updat
 
 🚀 You can get a weekly updated demo by connecting to the following Bucket `s3://bb-media-data/streaming-availability/` using AWS CLI or any software and the endpoint parameter `--endpoint https://nyc3.digitaloceanspaces.com`.
 
-##### Example `aws s3 --endpoint https://nyc3.digitaloceanspaces.com cp s3://bb-media-data/streaming-availability/ /Demo/BB-Media --recursive`
+>**Command example** `aws s3 --endpoint https://nyc3.digitaloceanspaces.com cp s3://bb-media-data/streaming-availability/ /Demo/BB-Media --recursive`
 
 ## File Description
 We provide a detailed description of the files contained in the `Contents`, `Episodes`, and `Stats` folders, explaining the structure and type of data each one manages.
