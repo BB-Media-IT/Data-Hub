@@ -56,15 +56,15 @@ We provide a detailed description of the files contained in the `Sources` folder
 | Directors | array |  |  |
 | CreatedBy | array |  |  |
 | Cast | array |  |  |
-| Crew | Array of objects |  | [View More In Crew](#Crew) |
-| Akas | Array of objects |  | [View More In Akas](#Akas) |
+| Crew | array |  | [View More In Crew](#Crew) |
+| Akas | array |  | [View More In Akas](#Akas) |
 | Country | array | List of production countries. |  |
-| Companies | Array of objects |  | [View More In Companies](#Companies) |
-| Synopsis | Array of objects |  | [View More In Synopsis](#Synopsis) |
-| Images | Array of objects |  | [View More In Images](#Images) |
-| Videos | Array of objects | Trailers or other promotional videos. | [View More In Videos](#Videos) |
+| Companies | array |  | [View More In Companies](#Companies) |
+| Synopsis | array |  | [View More In Synopsis](#Synopsis) |
+| Images | array |  | [View More In Images](#Images) |
+| Videos | array | Trailers or other promotional videos. | [View More In Videos](#Videos) |
 | Languages | array |  |  |
-| ReleaseYears | Array of objects | List of release years by territory. | [View More In ReleaseYears](#ReleaseYears) |
+| ReleaseYears | array | List of release years by territory. | [View More In ReleaseYears](#ReleaseYears) |
 | ReleaseDate | string |  |  |
 | Duration | integer |  |  |
 | Genres | array |  |  |
@@ -75,7 +75,7 @@ We provide a detailed description of the files contained in the `Sources` folder
 | IsAdult | boolean |  |  |
 | Franchise | string |  |  |
 | Scripted | boolean |  |  |
-| Seasons | Array of objects |  | [View More In Seasons](#Seasons) |
+| Seasons | array |  | [View More In Seasons](#Seasons) |
 | Rating | array | Age rating. |  |
 | CreatedAt | string | Indicates when the record was created in our database. | 2017-07-21 17:32:28+00:00 |
 | UpdatedAt | string | Indicates when the record was updated in our database. | 2017-07-21 17:32:28+00:00 |
