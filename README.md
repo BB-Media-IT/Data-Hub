@@ -68,7 +68,7 @@ Our advanced algorithm aims to standardize different products by unifying conten
 - Weekly updates from various sources
 - Generation of BB UID for universal content tracking
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here](/audiovisual-identifier--metadata/aim-schemas.md).
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/Audiovisual%20Identifier%20%26%20Metadata/aim-schemas.md).
 
 ### Updates & Coverage
 - Information is updated on a weekly basis
