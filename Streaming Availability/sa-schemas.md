@@ -175,13 +175,23 @@ We provide a detailed description of the files contained in the `Contents`, `Epi
 | Name  | string   | Name of the attribute. (Favorites, Likes)          | Favorites                     |
 | Value | integer  | Value of the attribute at the time of survey.      | 2000                          |
 
+### Stats
+
+| Field           | Type    | Description                                                                                                                             | Example                |
+|-----------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+| PlatformId      | integer | ID for the platform. The ID refers to the platform across all available territories.                                                    | 266                    |
+| PlatformCode    | string  | Code identifying the platform and the territory.                                                                                        | us.disneyplus          |
+| PlatformName    | string  | Official name of the platform.                                                                                                          | Disney+                |
+| PlatformCountry | string  | Country ISO 3166-1 alpha-2 code.                                                                                                        | US                     |
+| NullRate        | array   | Shows the rate of null values in each mandatory variable across the whole dataset of the platform in that day, grouped by content type. | `Dict`                 |
+| LastUpdates     | string  | Date and time of the last updates.                                                                                                      | 2017-07-21T17:32:28Z   |
+| Total           | array   | Total count of each available content type.                                                                                             | `Array <Dict>`         |
+| Match           | array   | Match rate grouped by provider (external database).                                                                                     | `Array <Dict>`         |
+| CreatedAt       | string  | Date and time of creation.                                                                                                              | 2017-07-21T17:32:28Z   |
 
 ## Table Visualization & Data Relationships
 We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall Streaming Availability product data model.
 
 ![Streaming Availability](https://github.com/BB-Media-IT/Data-Hub/assets/4085605/85d6bf4e-e051-45fb-8cd5-005e8f90f9f9)
 
-
----------------------------
-
-👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
+>👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
