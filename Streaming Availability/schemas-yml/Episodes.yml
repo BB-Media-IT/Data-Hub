@@ -1,4 +1,4 @@
-ScrapingEpisodes:
+Episodes:
   type: object
   properties:
     PlatformId:
@@ -25,6 +25,11 @@ ScrapingEpisodes:
       type: integer
       nullable: true
       description: Episode number.
+    HashUnique:
+      type: string
+      description: >
+        Hash identifying specific platform and territory.
+      example: 5accc281a08231033065169891875820
     Id:
       type: string
       description: >

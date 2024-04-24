@@ -1,4 +1,4 @@
-ScrapingStats:
+Stats:
   type: object
   properties:
     PlatformId:
