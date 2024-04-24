@@ -191,6 +191,6 @@ We provide a detailed description of the files contained in the `Contents`, `Epi
 ## Table Visualization & Data Relationships
 We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall Streaming Availability product data model.
 
-![Streaming Availability](https://github.com/BB-Media-IT/Data-Hub/assets/4085605/85d6bf4e-e051-45fb-8cd5-005e8f90f9f9)
+![Streaming Availability](https://github.com/BB-Media-IT/Data-Hub/assets/4085605/3e83ba95-a5ba-43da-af8f-c5bbbc11800e)
 
 >👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
