@@ -30,171 +30,177 @@ We provide a detailed description of the files contained in the `Sources` folder
 ### BBIDs
 | Field        | Type   | Description                                                               | Example                          |
 |--------------|--------|---------------------------------------------------------------------------|----------------------------------|
-| UID          | string | The ID created by BB which identifies a group of external IDs.            | a646fad6731af909f1a7d4309c2cd069 |
+| UID          | string | The ID created by BB which identifies a group of external IDs.            | f6343770f9212ebc396d74d21354ad33 |
 | ExternalIds  | array  | -                                                                         | [View More In ExternalIds](#externalids) |
 
 #### ExternalIds
-| Field      | Type   | Description                                                   | Example                        |
-|------------|--------|---------------------------------------------------------------|--------------------------------|
-| UID        | string | The ID created by BB which identifies a group of external IDs.| a646fad6731af909f1a7d4309c2cd069 |
-| Provider   | string | Identifies the source of the ID.                              |                                |
-| ID         | string | The ID from the external provider.                            |                                |
-| Type       | string | The type assigned by the external provider.                   |                                |
-| CreatedAt  | string | The time when the ID was inserted in our database.            | 2017-07-21T17:32:28+00:00 |
-| UpdatedAt  | string | The time when the ID was last updated in our database.        | 2017-07-21T17:32:28+00:00 |
+| Field      | Type   | Description                                                   | Example                            |
+|------------|--------|---------------------------------------------------------------|------------------------------------|
+| UID        | string | The ID created by BB which identifies a group of external IDs.| f6343770f9212ebc396d74d21354ad33   |
+| Provider   | string | Identifies the source of the ID.                              | eidr                               |
+| ID         | string | The ID from the external provider.                            | 10.5240/8805-D5B9-3435-1B99-E538-L |
+| Type       | string | The type assigned by the external provider.                   | Movie                              |
+| CreatedAt  | string | The time when the ID was inserted in our database.            | 2023-04-10T20:39:33Z               |
+| UpdatedAt  | string | The time when the ID was last updated in our database.        | 2024-04-21T04:59:04Z               |
 
 ### SourcesContents
+| Field         | Type    | Description                                     | Example     |
+|---------------|---------|-------------------------------------------------|-------------|
+| UID           | string  | Universal BB ID.                                | f6343770f9212ebc396d74d21354ad33 |
+| Source        | string  | Source of the metadata.                         | bb          |
+| Id            | string  | ID in the external database.                    | `null`      |
+| Title         | string  | Content title.                                  | Star Wars: The Rise of Skywalker |
+| OriginalTitle | string  | Title in the original language.                 | Star Wars: The Rise of Skywalker |
+| Year          | integer | Year of release.                                | 2019        |
+| Directors     | array   | List of directors.                              | ["J.J. Abrams"] |
+| CreatedBy     | array   | Name of the creator.                            | `null`      |
+| Cast          | array   | List of cast.                                   | ["Carrie Fisher","Mark Hamill","Daisy Ridley",...] |
+| Crew          | array   | List of crew who worked in the title.           | [View More In Crew](#crew) |
+| Akas          | array   | List of localized titles for different regions. | [View More In Akas](#akas) |
+| Country       | array   | List of production countries.                   | ["US"]      |
+| Companies     | array   | List of companies involved in the production and distribution of this title. | [View More In Companies](#companies) |
+| Synopsis      | array   | List of synopsis and their languages            | [View More In Synopsis](#synopsis) |
+| Images        | array   | URLs to different kinds of images.              | [View More In Images](#images) |
+| Videos        | array   | Trailers or other promotional videos.           | [View More In Videos](#videos) |
+| Languages     | array   | Languages used in the title.                    | ["en"]      |
+| ReleaseYears  | array   | List of release years by territory.             | [View More In ReleaseYears](#releaseyears) |
+| ReleaseDate   | string  | Global release day                              | 2019-12-18  |
+| Duration      | integer | Runtime in minutes.                             | 142         |
+| Genres        | array   | List of genres                                  | ["Adventure","Action","Science Fiction"] |
+| Homepage      | string  | Website for the content.                        | https://www.starwars.com/films/star-wars-episode-ix-the-rise-of-skywalker |
+| Keywords      | array   | List of keywords                                | ["Space"]   |
+| Status        | string  | Content status.                                 | `null` `Planned` `Pilot` `In Production` `Returning` `Canceled` `Ended` |
+| Type          | string  | Content type.                                   | Movie       |
+| IsAdult       | boolean | Flag indicating whether the title is for adult audiences. | `true` `false` |
+| Franchise     | string  | Name of the franchise the title belongs to.     | `null`         |
+| Scripted      | boolean | -                                               | `true` `false` |
+| Seasons       | array   | -                                               | [View More In Seasons](#seasons) |
+| Rating        | array   | Age rating.                                     | PG-13          |
+| CreatedAt     | string  | Indicates when the record was created.          | 2023-04-10T20:39:33Z |
+| UpdatedAt     | string  | Indicates when the record was updated.          | 2024-04-21T04:59:04Z |
 
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| UID | string | Universal BB ID. |  |
-| Source | string | Source of the metadata. |  |
-| Id | string | ID in the external database. | tt13443470 |
-| Title | string |  |  |
-| OriginalTitle | string |  |  |
-| Year | integer |  |  |
-| Directors | array |  |  |
-| CreatedBy | array |  |  |
-| Cast | array |  |  |
-| Crew | array |  | [View More In Crew](#Crew) |
-| Akas | array |  | [View More In Akas](#Akas) |
-| Country | array | List of production countries. |  |
-| Companies | array |  | [View More In Companies](#Companies) |
-| Synopsis | array |  | [View More In Synopsis](#Synopsis) |
-| Images | array |  | [View More In Images](#Images) |
-| Videos | array | Trailers or other promotional videos. | [View More In Videos](#Videos) |
-| Languages | array |  |  |
-| ReleaseYears | array | List of release years by territory. | [View More In ReleaseYears](#ReleaseYears) |
-| ReleaseDate | string |  |  |
-| Duration | integer |  |  |
-| Genres | array |  |  |
-| Homepage | string |  |  |
-| Keywords | array |  |  |
-| Status | string |  |  |
-| Type | string |  |  |
-| IsAdult | boolean |  |  |
-| Franchise | string |  |  |
-| Scripted | boolean |  |  |
-| Seasons | array |  | [View More In Seasons](#Seasons) |
-| Rating | array | Age rating. |  |
-| CreatedAt | string | Indicates when the record was created in our database. | 2017-07-21 17:32:28+00:00 |
-| UpdatedAt | string | Indicates when the record was updated in our database. | 2017-07-21 17:32:28+00:00 |
 
 #### Crew
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| Name | string |  |  |
-| Role | string |  |  |
-#### Akas
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| Language | string |  |  |
-| Region | string |  |  |
-| Title | string |  |  |
-#### Companies
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| Country | string |  |  |
-| Name | string |  |  |
-| Type | string |  |  |
-#### Synopsis
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| Region | string |  |  |
-| Language | string |  |  |
-| Description | string |  |  |
-#### Images
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| Type | string |  |  |
-| Language | string |  |  |
-| URL | string |  |  |
-| BBURL | string |  |  |
-#### Videos
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| Provider | string |  |  |
-| Id | string |  |  |
-| Language | string |  |  |
-| Type | string |  |  |
-#### ReleaseYears
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| Country | string |  |  |
-| Year | integer |  |  |
-#### Seasons
-| Field | Type | Description | Example |
-| --- | --- | --- | --- |
-| Number | integer | Season number. |  |
-| Episodes | integer | Number of episodes in the season. |  |
-| Year | integer |  |  |
-| SeasonId | integer |  |  |
-| Title | string |  |  |
+| Field | Type   | Description | Example         |
+|-------|--------|-------------|-----------------|
+| Name  | string | -           | Michelle Rejwan |
+| Role  | string | -           | Producer        |
 
+#### Akas
+| Field    | Type   | Description | Example    |
+|----------|--------|-------------|------------|
+| Language | string | ISOAlpha2   | kr         |
+| Region   | string | ISOAlpha2   | KR         |
+| Title    | string | -           | 스타워즈-라이즈 오브 스카이워커 |
+
+#### Companies
+| Field   | Type   | Description | Example |
+|---------|--------|-------------|---------|
+| Country | string | ISOAlpha2   | US      |
+| Name    | string | -           | Lucasfilm Ltd. |
+| Type    | string | -           | Production |
+
+#### Synopsis
+| Field       | Type   | Description | Example |
+|-------------|--------|-------------|---------|
+| Region      | string | ISOAlpha2   | JP      |
+| Language    | string | ISOAlpha2   | ja      |
+| Description | string | -           | かつて銀河に君臨していた祖父ダース・ベイダーに傾倒し... |
+
+#### Images
+| Field    | Type   | Description | Example |
+|----------|--------|-------------|---------|
+| Type     | string | -           | `Poster` `Backdrop` `Thumbnail` `Logo` `null` |
+| Language | string | ISOAlpha2   | `null`  |
+| URL      | string | -           | `null`  |
+| BBURL    | string | -           | <img src="https://dlv.nyc3.digitaloceanspaces.com/images/db32LaOibwEliAmSL2jjDF6oDdj-154.jpg"/> |
+
+#### Videos
+| Field    | Type   | Description | Example     |
+|----------|--------|-------------|-------------|
+| Provider | string | -           | YouTube     |
+| Id       | string | -           | oln5JMXRT9U |
+| Language | string | ISOAlpha2   | en          |
+| Type     | string | -           | Featurette  |
+
+#### ReleaseYears
+| Field   | Type    | Description | Example |
+|---------|---------|-------------|---------|
+| Country | string  | ISOAlpha2   | US      |
+| Year    | integer | -           | 2019    |
+
+#### Seasons
+| Field    | Type    | Description          | Example   |
+|----------|---------|----------------------|-----------|
+| Number   | integer | Season number.       | 1         |
+| Episodes | integer | Number of episodes.  | 10        |
+| Year     | integer | N/D                  | 2023      |
+| SeasonId | integer | N/D                  | 333987    |
+| Title    | string  | N/D                  | Seasons 1 |
 
 ### SourcesImages
 | Field      | Type   | Description                                            | Example                          |
 |------------|--------|--------------------------------------------------------|----------------------------------|
-| UID        | string | Content ID by BB.                                      | a646fad6731af909f1a7d4309c2cd069 |
-| ID         | string | Content ID determined by the provider.                 |                                  |
-| Type       | string | Content type determined by the provider.               |                                  |
-| Provider   | string | Identifies where the images were sourced.              |                                  |
-| Images     | array  | -                                                      | [View More In Images](#images)   |
-| Seasons    | array  | -                                                      | [View More In Seasons](#seasons) |
-| CreatedAt  | string | Indicates when the record was created in our database. | 2017-07-21T17:32:28Z             |
+| UID        | string | Content ID by BB.                                      | f6343770f9212ebc396d74d21354ad33 |
+| ID         | string | Content ID determined by the provider.                 | 181812                           |
+| Type       | string | Content type determined by the provider.               | Movie                            |
+| Provider   | string | Identifies where the images were sourced.              | tmbd                             |
+| Images     | array  | -                                                      | [View More In Images](#s-images) |
+| Seasons    | array  | -                                                      | [View More In Seasons](#s-seasons) |
+| CreatedAt  | string | Indicates when the record was created in our database. | 2024-04-21T04:03:02Z             |
 
-#### Images
-| Field    | Type   | Description | Example |
-|----------|--------|-------------|---------|
-| Type     | string | -           |         |
-| ImageUrl | string | -           |         |
+#### S-Images
+| Field    | Type   | Description | Example                                       |
+|----------|--------|-------------|-----------------------------------------------|
+| Type     | string | -           | `Poster` `Backdrop` `Thumbnail` `Logo` `null` |
+| ImageUrl | string | -           | <img src="https://dlv.nyc3.digitaloceanspaces.com/images/jOzrELAzFxtMx2I4uDGHOotdfsS-154.jpg"> |
 
-#### Seasons
+#### S-Seasons
 | Field    | Type   | Description   | Example                                         |
 |----------|--------|---------------|-------------------------------------------------|
-| ID       | string | -             |                                                 |
-| Number   | integer| Season number.|                                                 |
+| ID       | string | -             | 125919                                          |
+| Number   | integer| Season number.| 1                                               |
 | Images   | array  | -             | [View More In Season Images](#season-images)    |
 | Episodes | array  | -             | [View More In Episodes](#episodes)              |
 
 #### Season Images
-| Field    | Type   | Description | Example |
-|----------|--------|-------------|---------|
-| Type     | string | -           |         |
-| ImageUrl | string | -           |         |
+| Field    | Type   | Description | Example                                       |
+|----------|--------|-------------|-----------------------------------------------|
+| Type     | string | -           | `Poster` `Backdrop` `Thumbnail` `Logo` `null` |
+| ImageUrl | string | -           | <img src="https://dlv.nyc3.digitaloceanspaces.com/images/ozHgksxrAu3uzi7axD1XavC58To-154.jpg" /> |
 
 #### Episodes
-| Field    | Type   | Description   | Example                                       |
-|----------|--------|---------------|-----------------------------------------------|
-| ID       | integer| -             |                                               |
-| Number   | integer| Episode number|                                               |
-| Images   | array  | -             | [View More In Episode Images](#episode-images)|
+| Field    | Type   | Description    | Example                                       |
+|----------|--------|----------------|-----------------------------------------------|
+| ID       | integer| -              | 1818809                                       |
+| Number   | integer| Episode number.| 1                                             |
+| Images   | array  | -              | [View More In Episode Images](#episode-images)|
 
 #### Episode Images
-| Field    | Type   | Description | Example |
-|----------|--------|-------------|---------|
-| Type     | string | -           |         |
-| ImageUrl | string | -           |         |
+| Field    | Type   | Description | Example        |
+|----------|--------|-------------|----------------|
+| Type     | string | -           | `Still`        |
+| ImageUrl | string | -           | <img src="https://dlv.nyc3.digitaloceanspaces.com/images/fe8vz1SEVQkwOe4XBUcFNrg6oxu-154.jpg" /> |
 
 ### SourcesPopularity
 | Field           | Type    | Description                                            | Example                  |
 |-----------------|---------|--------------------------------------------------------|--------------------------|
-| UID             | string  | -                                                      | a646fad6731af909f1a7d4309c2cd069 |
-| Provider        | string  | -                                                      |                          |
-| ID              | string  | -                                                      |                          |
-| Popularity      | integer | -                                                      |                          |
-| MetacriticScore | integer | -                                                      |                          |
-| CreatedAt       | string  | Indicates when the record was created in our database. | 2017-07-21T17:32:28Z     |
+| UID             | string  | -                                                      | f6343770f9212ebc396d74d21354ad33 |
+| Provider        | string  | -                                                      | tmdb                     |
+| ID              | string  | -                                                      | 181812                   |
+| Popularity      | integer | -                                                      | 68.87                    |
+| MetacriticScore | integer | -                                                      | `null`                   |
+| CreatedAt       | string  | Indicates when the record was created in our database. | 2024-04-21T00:00:00Z     |
 
 ### SourcesRatings
 | Field     | Type    | Description                                            | Example                  |
 |-----------|---------|--------------------------------------------------------|--------------------------|
-| UID       | string  | -                                                      | a646fad6731af909f1a7d4309c2cd069 |
-| Provider  | string  | -                                                      |                          |
-| ID        | string  | -                                                      |                          |
-| Votes     | integer | -                                                      |                          |
-| Score     | number  | -                                                      |                          |
-| CreatedAt | string  | Indicates when the record was created in our database. | 2017-07-21T17:32:28Z     |
+| UID       | string  | -                                                      | f6343770f9212ebc396d74d21354ad33 |
+| Provider  | string  | -                                                      | imdb                     |
+| ID        | string  | -                                                      | tt2527338                |
+| Votes     | integer | -                                                      | 492415                   |
+| Score     | number  | -                                                      | 6.4                      |
+| CreatedAt | string  | Indicates when the record was created in our database. | 2024-04-21T00:00:00Z     |
 
 ## Table Visualization & Data Relationships
 We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall `Audiovisual Identifier & Metadata` product data model.
