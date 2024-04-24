@@ -13,10 +13,20 @@ This document is organized into the following sections:
 ## Details of the S3 Buckets
 Each client receives an S3 Bucket where data is organized into specific folders to ensure efficient management and quick access. The folder names reflect the types of data they contain, facilitating the identification and specific processing of each data set:
 
-s3://bucket-client/client/Contents
-s3://bucket-client/client/Episodes
-s3://bucket-client/client/Stats
-Each of these folders contains a latest subfolder, which is periodically updated with the latest available snapshot, ensuring that clients always have access to the most recent information.
+#### Example: 
+- `s3://bucket-client/Contents`
+- `s3://bucket-client/Episodes`
+- `s3://bucket-client/Stats`
+
+Each of these folders contains a `latest` subfolder, which is periodically updated with the latest available snapshot, ensuring that clients always have access to the most recent information.
+
+#### Update frequency and scope
+- The update of the data in S3 Bucket is defined according to the needs of each customer.
+- The scope is defined according to the needs of each customer.
+
+🚀 You can get a weekly updated demo by connecting to the following Bucket `s3://bb-media-data/streaming-availability/` using AWS CLI or any software and the endpoint parameter `--endpoint https://nyc3.digitaloceanspaces.com`.
+
+##### Example `aws s3 --endpoint https://nyc3.digitaloceanspaces.com cp s3://bb-media-data/streaming-availability/ /Demo/BB-Media --recursive`
 
 ## File Description
 We provide a detailed description of the files contained in the `Contents`, `Episodes`, and `Stats` folders, explaining the structure and type of data each one manages.
@@ -50,14 +60,14 @@ We provide a detailed description of the files contained in the `Contents`, `Epi
 | Cast                  | array    | List of names from the cast, as provided by the platform.                                                    | ["Arnold Schwarzenegger","Grace Jones"] |
 | Crew                  | array    | List of crew members and their roles.                                                                        | [view in Crew](#crew)              |
 | Directors             | array    | In the case of series, it may contain the series creators or episode directors.                              | ["Richard Fleischer"]              |
-| Download              | boolean  | Indicates whether the content can be downloaded for offline watching.                                        | true / false                       |
-| IsOriginal            | boolean  | Whether the content is original to the platform.                                                             | true / false                       |
-| IsAdult               | boolean  | Whether the content is for adult audiences only.                                                             | true / false                       |
+| Download              | boolean  | Indicates whether the content can be downloaded for offline watching.                                        | true, false                        |
+| IsOriginal            | boolean  | Whether the content is original to the platform.                                                             | true, false                        |
+| IsAdult               | boolean  | Whether the content is for adult audiences only.                                                             | true, false                        |
 | Packages              | array    | Business models available for the movie or series.                                                           | [view in Packages](#packages)      |
 | CreatedAt             | string   | Indicates the time the data was scraped from the platform.                                                   | 2017-07-21T17:32:28Z               |
-| IsBranded             | boolean  | Whether the content shows the platform branding.                                                             | true / false                       |
-| IsExclusive           | boolean  | Whether the content is exclusive to the platform.                                                            | true / false                       |
-| IsPremium             | boolean  | Whether the content requires an upgrade over the basic subscription.                                         | true / false                       |
+| IsBranded             | boolean  | Whether the content shows the platform branding.                                                             | true, false                        |
+| IsExclusive           | boolean  | Whether the content is exclusive to the platform.                                                            | true, false                        |
+| IsPremium             | boolean  | Whether the content requires an upgrade over the basic subscription.                                         | true, false                        |
 | Seasons               | array    | Information about seasons if applicable.                                                                     | [view in Seasons](#seasons)        |
 | Subtitles             | array    | List of available subtitle languages as ISO 639-2 codes.                                                     | ["en","es","pt"]                   |
 | Dubbed                | array    | List of available dub languages as ISO 639-2 codes.                                                          | ["en","es","pt"]                   |
