@@ -182,7 +182,7 @@ We provide a detailed description of the files contained in the `Contents`, `Epi
 | PlatformCode    | string  | Code identifying the platform and the territory.                                                                                        | us.disneyplus          |
 | PlatformName    | string  | Official name of the platform.                                                                                                          | Disney+                |
 | PlatformCountry | string  | Country ISO 3166-1 alpha-2 code.                                                                                                        | US                     |
-| NullRate        | array   | Shows the rate of null values in each mandatory variable across the whole dataset of the platform in that day, grouped by content type. | `Dict`                 |
+| NullRate        | array   | Shows the rate of null values in each mandatory variable across the whole dataset of the platform in that day, grouped by content type. | `Array <Dict>`         |
 | LastUpdates     | string  | Date and time of the last updates.                                                                                                      | 2017-07-21T17:32:28Z   |
 | Total           | array   | Total count of each available content type.                                                                                             | `Array <Dict>`         |
 | Match           | array   | Match rate grouped by provider (external database).                                                                                     | `Array <Dict>`         |
