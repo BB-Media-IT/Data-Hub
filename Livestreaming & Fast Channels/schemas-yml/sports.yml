@@ -1,0 +1,89 @@
+sports:
+  @context:
+    type: string
+  @type:
+    type: string
+  event_id:
+    type: string
+  isLiveBroadcast:
+    type: boolean
+  eventAttendanceMode:
+    type: string
+  broadcastOfEvent:
+    type: object
+    properties:
+      @type:
+        type: string
+      sport:
+        type: string
+      organizer:
+        type: object
+        properties:
+          @type:
+            type: string
+          name:
+            type: string
+      eventStatus:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      awayTeam:
+        type: object
+        properties:
+          @type:
+            type: string
+          name:
+            type: string
+          sport:
+            type: string
+      homeTeam:
+        type: object
+        properties:
+          @type:
+            type: string
+          name:
+            type: string
+          sport:
+            type: string
+      startDate:
+        type: string
+      endDate:
+        type: string
+      location:
+        type: object
+        properties:
+          @type:
+            type: string
+          name:
+            type: string
+      offers:
+        type: object
+        properties:
+          @type:
+            type: string
+          highPrice:
+            type: number
+          lowPrice:
+            type: number
+          offerCount:
+            type: integer
+          offers:
+            type: array
+            items:
+              type: object
+              properties:
+                @type:
+                  type: string
+                name:
+                  type: string
+                url:
+                  type: string
+      audience:
+        type: object
+        properties:
+          @type:
+            type: string
+          name:
+            type: string

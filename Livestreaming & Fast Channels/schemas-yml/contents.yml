@@ -73,11 +73,6 @@ Content:
       minimum: 1
       description: Duration of the content in minutes.
       example: 120
-    Seconds:
-      type: integer
-      minimum: 1
-      description: Duration of the content in seconds.
-      example: 7200
     Genres:
       type: array
       items:

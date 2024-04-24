@@ -18,7 +18,7 @@ This folder contains a `latest` subfolder, which is periodically updated with th
 
 #### Update frequency and scope
 - The update of data in S3 Bucket is daily. 
-- The scope is defined according to the needs of each client, guaranteeing at least `Metadata BB`.
+- The scope is defined according to the needs of each customer, guaranteeing at least `Metadata BB`.
 
 🚀 You can get a weekly updated demo by connecting to the following Bucket `s3://bb-media-data/audiovisual-identifier-and-metadata/` using AWS CLI or any software and the endpoint parameter `--endpoint https://nyc3.digitaloceanspaces.com`.
 
