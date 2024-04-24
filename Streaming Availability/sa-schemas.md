@@ -154,14 +154,14 @@ We provide a detailed description of the files contained in the `Contents`, `Epi
 #### Seasons
 | Field     | Type   | Description                                              | Example                         |
 |-----------|--------|----------------------------------------------------------|---------------------------------|
-| Number    | integer| Season number (optional).                                | 1                               |
+| Number    | integer| Season number (optional).                                | 3                               |
 | Episodes  | integer| Number of episodes available for that season (optional). | 10                              |
-| Year      | integer| Year of release for the season (optional).               | 2019                            |
-| SeasonId  | string | Season ID used by the platform (optional).               | s01                             |
-| Title     | string | Title of the season.                                     | Season 1                        |
-| Deeplink  | string | Deeplink for the season (optional).                      | https://www.example.com/season1 |
+| Year      | integer| Year of release for the season (optional).               | 2009                            |
+| SeasonId  | string | Season ID used by the platform (optional).               | 70155472                        |
+| Title     | string | Title of the season.                                     | Season 3                        |
+| Deeplink  | string | Deeplink for the season (optional).                      | https://www.netflix.com/us/title/70136153 |
 | OtherIds  | array  | Other identifiers for the season.                        | [view in OtherIds](#otherids)   |
-| Packages  | array  | Business models available within the season.             | [view in Packages](#packages)   |
+| Packages  | array  | Business models available within the season.             | `[{"Type": "subscription-vod","Episodes": 20}]` |
 
 #### PopularityRankingBy
 | Field | Type    | Description                                        | Example                       |
