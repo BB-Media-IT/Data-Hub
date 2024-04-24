@@ -200,8 +200,7 @@ We provide a detailed description of the files contained in the `Sources` folder
 We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall `Audiovisual Identifier & Metadata` product data model.
 
 You can obtain the relationships between all BB Media products in this [link](/File%20Relationships/relationships.md).
-
-![Audiovisual Identifier   Metadata](https://github.com/BB-Media-IT/Data-Hub/assets/4085605/37084332-9ac4-4b59-b033-35c5f823673b)
+![Audiovisual Identifier   Metadata (1)](https://github.com/BB-Media-IT/Data-Hub/assets/4085605/e26de2c4-e3cf-458d-b030-55b4d5fdf2e7)
 
 
 >👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
