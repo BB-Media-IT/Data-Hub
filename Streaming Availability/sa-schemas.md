@@ -161,7 +161,7 @@ We provide a detailed description of the files contained in the `Contents`, `Epi
 | Title     | string | Title of the season.                                     | Season 3                        |
 | Deeplink  | string | Deeplink for the season (optional).                      | https://www.netflix.com/us/title/70136153 |
 | OtherIds  | array  | Other identifiers for the season.                        | [view in OtherIds](#otherids)   |
-| Packages  | array  | Business models available within the season.             | `[{"Type": "subscription-vod","Episodes": 20}]` |
+| Packages  | array  | Business models available within the season.             | `[{"Type": "subscription-vod","Episodes": 10}]` |
 
 #### PopularityRankingBy
 | Field | Type    | Description                                        | Example                       |
