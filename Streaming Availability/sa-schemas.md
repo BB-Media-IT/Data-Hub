@@ -132,7 +132,7 @@ We provide a detailed description of the files contained in the `Contents`, `Epi
 | Android | string | URL for Android platforms (optional).    | disneyplus://disneyplus.com/video/498649d2-a45d-4d77-910c-f5fe1e837a90 |
 | iOS     | string | URL for iOS platforms (optional).        | disneyplus://disneyplus.com/video/498649d2-a45d-4d77-910c-f5fe1e837a90 |
 
-### Crew
+#### Crew
 | Field | Type   | Description                              | Example                       |
 |-------|--------|------------------------------------------|-------------------------------|
 | Role  | string | Role of the crew member on the platform. | Producer                      |
@@ -176,7 +176,6 @@ We provide a detailed description of the files contained in the `Contents`, `Epi
 | Value | integer  | Value of the attribute at the time of survey.      | 2000                          |
 
 ### Stats
-
 | Field           | Type    | Description                                                                                                                             | Example                |
 |-----------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------|
 | PlatformId      | integer | ID for the platform. The ID refers to the platform across all available territories.                                                    | 266                    |
