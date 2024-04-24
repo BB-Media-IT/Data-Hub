@@ -29,7 +29,7 @@ Each of these folders contains a `latest` subfolder, which is periodically updat
 >**Command example** `aws s3 --endpoint https://nyc3.digitaloceanspaces.com cp s3://bb-media-data/streaming-availability/ /Demo/BB-Media --recursive`
 
 ## File Description
-We provide a detailed description of the files contained in the `Contents`, `Episodes`, and `Stats` folders, explaining the structure and type of data each one manages. If you want to see the schemas in YAML, [click here](/schemas-yml).
+We provide a detailed description of the files contained in the `Contents`, `Episodes`, and `Stats` folders, explaining the structure and type of data each one manages. If you want to see the schemas in YAML, [click here](schemas-yml).
 
 ### Contents
 | Field                 | Type     | Description                                                                                                  | Example                            |
