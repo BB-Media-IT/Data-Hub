@@ -122,6 +122,7 @@ We provide a detailed description of the files contained in the `Sources` folder
 | Id       | string | -           | oln5JMXRT9U |
 | Language | string | ISOAlpha2   | en          |
 | Type     | string | -           | Featurette  |
+[![Featurette](https://img.youtube.com/vi/oln5JMXRT9U/maxresdefault.jpg)](https://www.youtube.com/watch?v=oln5JMXRT9U)
 
 #### ReleaseYears
 | Field   | Type    | Description | Example |
