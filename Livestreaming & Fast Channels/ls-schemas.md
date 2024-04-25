@@ -189,4 +189,6 @@ We provide a detailed description of the files contained in the `Sources` folder
 ## Table Visualization & Data Relationships
 We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall `Livestreaming & Fast Channels` product data model.
 
+![Livestreaming](https://github.com/BB-Media-IT/Data-Hub/assets/4085605/c903e760-8a4a-4881-8f51-8d9c033fc1aa)
+
 >👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
