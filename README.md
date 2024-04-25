@@ -179,8 +179,8 @@ Stay on top of trending lists with our Top Ten service, which analyzes popular p
 👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
 
-## Screengrabrs
-Our Screengrabs service offers a customized client experience, capturing screens across platforms. Our algorithm navigates the interface, taking snapshots and traversing carousels to gather critical information such as carousel and item positioning.
+## Screengrab
+Our Screengrab service offers a customized client experience, capturing screens across platforms. Our algorithm navigates the interface, taking snapshots and traversing carousels to gather critical information such as carousel and item positioning.
 
 ### Features
 - Customized screengrab capabilities across multiple platforms
