@@ -124,7 +124,7 @@ We provide a detailed description of the files contained in the `Sources` folder
 | GMT | integer | GMT timezone offset. | -4 |
 
 ### sports
-We are moving forward in our live sporting events project. We are currently adapting our schemas to align with [schema.org](https://schema.org) standards, ensuring easy integration for clients. Focusing on major sports and leagues, we plan to release the initial version of the schema in May 2024. We will make every effort to ensure that this version will also include additional data, such as lineups and detailed information about teams and players.
+We are moving forward in our live sporting events project. We are currently adapting our schemas to align with [schema.org](https://schema.org) standards, ensuring easy integration for clients. Focusing on major sports and leagues, we plan to release the initial version of the schema in `May 2024`. We will make every effort to ensure that this version will also include additional data, such as lineups and detailed information about teams and players.
 
 | Field                 | Type     | Description | Example |
 |-----------------------|----------|-------------|---------|
