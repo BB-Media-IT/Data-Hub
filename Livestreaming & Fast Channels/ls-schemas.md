@@ -184,7 +184,7 @@ We provide a detailed description of the files contained in the `Sources` folder
 |-------|------|-------------|---------|
 | `@type` | String | Type. | Offer |
 | `name` | String | Name of the offer. | Amazon Prime Video |
-| `url` | URL as string | URL where the offer can be accessed. | https://watch.amazon.com/de tail?gti=amzn1.dv.gti.01ab1375-a637-4662-a3b9-84940f16764f |
+| `url` | URL as string | URL where the offer can be accessed. | https://watch.amazon.com/detail?gti=amzn1.dv.gti.01ab1375-a637-4662-a3b9-84940f16764f |
 
 ## Table Visualization & Data Relationships
 We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall `Livestreaming & Fast Channels` product data model.
