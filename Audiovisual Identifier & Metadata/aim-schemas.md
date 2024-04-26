@@ -185,21 +185,21 @@ We provide a detailed description of the files contained in the `Sources` folder
 ### SourcesPopularity
 | Field           | Type    | Description                                            | Example                  |
 |-----------------|---------|--------------------------------------------------------|--------------------------|
-| UID             | string  | -                                                      | f6343770f9212ebc396d74d21354ad33 |
-| Provider        | string  | -                                                      | tmdb                     |
-| ID              | string  | -                                                      | 181812                   |
-| Popularity      | integer | -                                                      | 68.87                    |
-| MetacriticScore | integer | -                                                      | `null`                   |
+| UID             | string  | Hash identifying the movie or series universally.      | f6343770f9212ebc396d74d21354ad33 |
+| Provider        | string  | Identifies the source of the ID.                       | tmdb                     |
+| ID              | string  | The ID from the external provider.                     | 181812                   |
+| Popularity      | integer | Popularity score in the external provider.             | 68.87                    |
+| MetacriticScore | integer | Metacritic score as shown in the external provider.    | `null`                   |
 | CreatedAt       | string  | Indicates when the record was created in our database. | 2024-04-21T00:00:00Z     |
 
 ### SourcesRatings
 | Field     | Type    | Description                                            | Example                  |
 |-----------|---------|--------------------------------------------------------|--------------------------|
-| UID       | string  | -                                                      | f6343770f9212ebc396d74d21354ad33 |
-| Provider  | string  | -                                                      | imdb                     |
-| ID        | string  | -                                                      | tt2527338                |
-| Votes     | integer | -                                                      | 492415                   |
-| Score     | number  | -                                                      | 6.4                      |
+| UID       | string  | Hash identifying the movie or series universally.      | f6343770f9212ebc396d74d21354ad33 |
+| Provider  | string  | Identifies the source of the ID.                       | imdb                     |
+| ID        | string  | The ID from the external provider.                     | tt2527338                |
+| Votes     | integer | Amount of votes in the external provider.              | 492415                   |
+| Score     | number  | Average score in the external provider.                | 6.4                      |
 | CreatedAt | string  | Indicates when the record was created in our database. | 2024-04-21T00:00:00Z     |
 
 ## Table Visualization & Data Relationships
