@@ -98,7 +98,7 @@ We provide a detailed description of the files contained in the `Sources` folder
 |---------|--------|-------------|---------|
 | Country | string | ISOAlpha2   | US      |
 | Name    | string | -           | Lucasfilm Ltd. |
-| Type    | string | -           | Production |
+| Type    | string | Production or distributor company.       | Production |
 
 #### Synopsis
 | Field       | Type   | Description | Example |
@@ -112,8 +112,8 @@ We provide a detailed description of the files contained in the `Sources` folder
 |----------|--------|-------------|---------|
 | Type     | string | -           | `Poster` `Backdrop` `Thumbnail` `Logo` `null` |
 | Language | string | ISOAlpha2   | `null`  |
-| URL      | string | -           | `null`  |
-| BBURL    | string | -           | <img src="https://dlv.nyc3.digitaloceanspaces.com/images/db32LaOibwEliAmSL2jjDF6oDdj-154.jpg"/> |
+| URL      | string | Original URL.         | `null`  |
+| BBURL    | string | Image URL hosted by BB.          | <img src="https://dlv.nyc3.digitaloceanspaces.com/images/db32LaOibwEliAmSL2jjDF6oDdj-154.jpg"/> |
 
 #### Videos
 | Field    | Type   | Description | Example     |
