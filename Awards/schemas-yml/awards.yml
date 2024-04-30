@@ -1,0 +1,36 @@
+Awards:
+  type: object
+  properties:
+    UID:
+      type: string
+    Event:
+      type: string
+    Territory:
+      type: string
+    Year:
+      type: integer
+      format: date
+    Category:
+      type: string
+    Subcategory:
+      type: string
+    WinnerOrNominee:   
+      type: string          
+    Title:
+      type: string
+    EpisodeTitle:
+      type: string
+    CotentType:
+      type: string
+    ImdbIdContent:
+      type: string
+    DataPerson:
+      type: array
+      items:
+        type: object
+        properties:
+          Name:
+            type: string    
+          ImdbId:
+            type: string        
+    
