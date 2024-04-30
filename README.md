@@ -76,7 +76,7 @@ Our Awards tracking service monitors over 140 accolades in the audiovisual indus
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Awards/awards-schemas.md).
 
-📊 For more information on dashboards, please [click here]()
+📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Awards%20dashboards.)
 
 ---
 
@@ -95,7 +95,7 @@ Stay ahead of the curve with our Content Tracker & Upcoming Titles service, meti
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Content%20Tracker%20&%20Upcoming%20Titles/ct-schemas.md).
 
-📊 For more information on dashboards, please [click here]()
+📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Content%20Tracker%20dashboards.)
 
 ---
 
@@ -114,7 +114,7 @@ Discover HITS, our groundbreaking DEMAND metric, a composite indicator designed 
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Hits/hits-schemas.md).
 
-📊 For more information on dashboards, please [click here]()
+📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Hits%20dashboards.)
 
 ---
 
@@ -133,8 +133,6 @@ Explore the breadth of live streaming and FAST channels with BB Media's dual-lev
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Livestreaming%20&%20Fast%20Channels/ls-schemas.md).
 
-📊 For more information on dashboards, please [click here]()
-
 ---
 
 ## Online Media Essentials
@@ -144,13 +142,13 @@ Track business models evolution , number of users per leading streaming platform
 Gain access to this essential online media consumption database and stay ahead of every trend.
 
 ### Features
-- WHO
-- HOUSEHOLDS
-- STREAMING SERVICES
-- USER EXPERIENCE
-- NON USERS
-- CHURN
-- PAY TV
+- Who
+- Households
+- Streaming Services
+- User Experience
+- NON Users
+- Churn
+- Pay TV
 
 ### Updates & Coverage
 - +30 Countries covered.
@@ -158,7 +156,7 @@ Gain access to this essential online media consumption database and stay ahead o
 - +27 Modules for analysis.
 - Updated every quarter.
 
-📊 For more information on dashboards, please [click here]()
+📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20OME%20dashboards.)
 
 ---
 
@@ -177,7 +175,7 @@ Dive into details about platform types and genres, revenue models, launch dates,
 - Weekly update.
 - Constant search for new platforms.
 
-📊 For more information on dashboards, please [click here]()
+📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Platform%20Essentials%20dashboards.)
 
 ---
 
@@ -196,7 +194,7 @@ Gain insights into how streaming platforms expand their user base through bundli
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Platforms,%20Plans%20&%20Bundles/ppb-schemas.md).
 
-📊 For more information on dashboards, please [click here]()
+📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20PPB%20dashboards.)
 
 ---
 
@@ -212,7 +210,7 @@ Our Screengrab service offers a customized client experience, capturing screens 
 - Frequent updates to adapt to platform changes and new features
 - Comprehensive data collection from various streaming services
 
-📊 For more information on dashboards, please [click here]()
+📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Screengrab%20dashboards.)
 
 ---
 
@@ -232,7 +230,7 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Streaming%20Availability/sa-schemas.md).
 
-📊 For more information on dashboards, please [click here]()
+📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Content%20Pulse%20dashboards.)
 
 ---
 
@@ -248,5 +246,3 @@ Stay on top of trending lists with our Top Ten service, which analyzes popular p
 - Detailed insights into the performance of top content across various platforms
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Top%20Ten/top-ten-schemas.md).
-
-📊 For more information on dashboards, please [click here]()
