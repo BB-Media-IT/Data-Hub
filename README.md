@@ -41,6 +41,7 @@ Here's what you can find in our S3 and Dashboards:
 - [Streaming Availability & Content Pulse](#streaming-availability--content-pulse)
 - [Top Ten](#top-ten)
 
+
 👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
 
 ---
@@ -227,6 +228,6 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 - `Screengrab` Weekly updates
 - `Top Ten` Weekly updates to ensure the most current content rankings
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here](/Streaming%20Availability/sa-schemas.md).
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/Streaming%20Availability%20&%20Content%20Pulse/sa-schemas.md).
 
 📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Content%20Pulse%20dashboards.)

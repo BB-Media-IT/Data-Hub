@@ -1,3 +1,9 @@
+<p align="right">
+<a href="screengrab-schemas.md" style="display: inline-block; padding: 10px 20px; color: white; background-color: #c91f45; border-radius: 8px; text-decoration: none; font-size: 10px">Screengrab</a>
+<a href="top-ten-schemas.md" style="display: inline-block; padding: 10px 20px; color: white; background-color: #c91f45; border-radius: 8px; text-decoration: none; font-size: 10px">Top Ten</a>
+</p>
+---
+
 # Streaming Availability
 
 This document details the schemas used to manage the data for the `Streaming Availability` product. During the delivery process, a specific S3 Bucket is generated for each client. In each of these buckets, we have three main folders that contain 
