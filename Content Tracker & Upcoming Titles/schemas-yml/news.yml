@@ -1,0 +1,33 @@
+RelevanNews:
+  type: object
+  properties:
+    COUNTRY:
+      type: array
+      items:
+        type: string
+    DATE:
+      type: string
+      format: date
+      example: 2020-01-13
+    DESCRIPTION:
+      type: string
+    ID_CONTENT:
+      type: integer
+    ID_NEWS:
+      type: integer
+    LINK:
+      type: string
+    NAME:
+      type: array
+      items:
+        type: string
+    PARTNERED_TO:
+      type: array
+      items:
+        type: string
+    TERRITORY:
+      type: array
+      items:
+        type: string
+    TYPE_OF_AGREEMENT:
+      type: string

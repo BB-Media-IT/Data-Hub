@@ -60,8 +60,6 @@ Our advanced algorithm aims to standardize different products by unifying conten
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Audiovisual%20Identifier%20%26%20Metadata/aim-schemas.md).
 
-📊 For more information on dashboards, please [click here]()
-
 ---
 
 ## Awards
@@ -129,13 +127,13 @@ Explore the breadth of live streaming and FAST channels with BB Media's dual-lev
 - Analysis of leading web-based FAST streaming services
 - Identification of major sports leagues and teams
 
-🚀 For more information on schemas and to access our S3 buckets, please [click here](/Livestreaming%20&%20Fast%20Channels/ls-schemas.md).
-
-📊 For more information on dashboards, please [click here]()
-
 ### Updates & Coverage
 - Regular updates to directory and programming analysis
 - Focus on key sports leagues and teams for targeted insights
+
+🚀 For more information on schemas and to access our S3 buckets, please [click here](/Livestreaming%20&%20Fast%20Channels/ls-schemas.md).
+
+📊 For more information on dashboards, please [click here]()
 
 ---
 

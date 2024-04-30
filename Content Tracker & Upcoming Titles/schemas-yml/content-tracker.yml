@@ -1,0 +1,99 @@
+ContentTracker:
+  type: object
+  properties:
+    BASED_ON_BOOK_VIDEOGAME:
+      type: string
+    CHANNEL_OTT:
+      type: array
+      items:
+        type: string
+    CONTENT_NAME:
+      type: string
+    CONTENT_TYPE:
+      type: string
+    COUNTRY_OF_PRODUCTION:
+      type: array
+      items:
+        type: string
+    COUNTRY_OF_THE_ORIGINAL_CONTENT:   
+      type: array
+      items:
+        type: string          
+    DATE:
+      type: string
+      format: date
+      example: 2020-01-13
+    DISTRIBUTION_COMPANY:
+      type: array
+      items:
+        type: string
+    DISTRIBUTION_COMPANY_OF_THE_ORIGINAL_CONTENT:
+      type: array
+      items:
+        type: string
+    DISTRIBUTION_COUNTRY_IES:
+      type: array
+      items:
+        type: string
+    EPISODES:
+      type: integer
+    GENRE:
+      type: string
+    ID_CONTENT:
+      type: integer
+    ID_IMDb:
+      type: string
+    ID_NEWS:
+      type: integer
+    LINK:
+      type: string
+    MINUTES:
+      type: integer
+    MULTIPLATFORM:
+      type: string
+    NAME_OF_ORIGINAL_CONTENT:
+      type: array
+      items:
+        type: string
+    PRODUCTION_COMPANY:
+      type: array
+      items:
+        type: string
+    PRODUCTION_COMPANY_OF_THE_ORIGINAL_CONTENT:
+      type: array
+      items:
+        type: string
+    PRODUCTION_TYPE:
+      type: string
+    REGION:
+      type: array
+      items:
+        type: string
+    RELEASE_DATE:
+      type: string
+      format: date
+      example: 2020-01-13
+    SEASONS:
+      type: array
+      items:
+        type: integer
+    STAGE:
+      type: string
+    SUBGENRE:
+      type: array
+      items:
+        type: string
+    SYNOPSIS:
+      type: string
+    TYPE_OF_AGREEMENT:
+      type: string
+    TYPE_OF_BUSINESS:
+      type: array
+      items:
+        type: string
+    TYPE_OF_PLATFORM:
+      type: array
+      items:
+        type: string
+    TYPE_OF_RELEASE:
+      type: string

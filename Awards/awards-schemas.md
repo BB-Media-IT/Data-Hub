@@ -6,7 +6,6 @@ This document details the schemas used to manage the `Awards` product data. Duri
 This document is organized into the following sections:
 
 - [**File Description**](#file-description)
-- [**Table Visualization & Data Relationships**](#table-visualization--data-relationships)
 
 ## Details of the S3 Buckets
 Each client receives an S3 Bucket where data is organized into specific folders to ensure efficient management and quick access. The folder names reflect the types of data they contain, facilitating the identification and specific processing of each data set:
@@ -27,28 +26,25 @@ This folder contains a `latest` subfolder, which is periodically updated with th
 We provide a detailed description of the files contained in the `Awards` folder, explaining the structure and type of data handled by each one. If you wish to see the schemas in YAML, [click here](schemas-yml).
 
 ### Awards
-Field | Type | Description | Example
---- | --- | --- | ---
-UID | string | No description provided. | 
-Event | string | No description provided. | 
-Territory | string | No description provided. | 
-Year | integer | No description provided. | 
-Category | string | No description provided. | 
-Subcategory | string | No description provided. | 
-WinnerOrNominee | string | No description provided. | 
-Title | string | No description provided. | 
-EpisodeTitle | string | No description provided. | 
-CotentType | string | No description provided. | 
-ImdbIdContent | string | No description provided. | 
-DataPerson | array of objects | No description provided. | [View More In DataPerson](#dataperson)
+Field           | Type    | Description                                                    | Example 
+----------------|---------|----------------------------------------------------------------|--- 
+UID             | string  | The ID created by BB which identifies a group of external IDs. | f6343770f9212ebc396d74d21354ad33 
+Event           | string  | No description provided. | 
+Territory       | string  | No description provided. | 
+Year            | integer | No description provided. | 
+Category        | string  | No description provided. | 
+Subcategory     | string  | No description provided. | 
+WinnerOrNominee | string  | No description provided. | 
+Title           | string  | No description provided. | 
+EpisodeTitle    | string  | No description provided. | 
+CotentType      | string  | No description provided. | 
+ImdbIdContent   | string  | No description provided. | 
+DataPerson      | array   | No description provided. | [View More In DataPerson](#dataperson)
 
 #### DataPerson
-Field | Type | Description | Example
---- | --- | --- | ---
-Name | string | No description provided. | 
-ImdbId | string | No description provided. | 
-
-## Table Visualization & Data Relationships
-We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall `Awards` product data model.
+Field  | Type   | Description              | Example 
+-------|--------|--------------------------|--- 
+Name   | string | No description provided. | 
+ImdbId | string | No description provided. |  
 
 >👋 For more information and pricing details, please feel free to [click here](mailto:hello@bb-media.com?subject=Let's%20Unlock%20Amazing%20Deals%20Together!)! We'd love to help you.
