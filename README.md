@@ -35,11 +35,9 @@ Here's what you can find in our S3 and Dashboards:
 - [Distributor](#distributors)
 - [Hits](#hits)
 - [Livestreaming & Fast Channels](#livestreaming--fast-channels)
-- [Online Audits](#online-audits)
 - [Online Media Essentials](#online-media-essentials)
 - [Platform Essentials](#platform-essentials)
 - [Prices, Plans & Bundles](#platforms-plans--bundles)
-- [Screengrab](#screengrab)
 - [Streaming Availability & Content Pulse](#streaming-availability--content-pulse)
 - [Top Ten](#top-ten)
 
@@ -143,11 +141,6 @@ Explore the breadth of live streaming and FAST channels with BB Media's dual-lev
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Livestreaming%20&%20Fast%20Channels/ls-schemas.md).
 
 ---
-## Online Audits
-### Features
-### Updates & Coverage
-
----
 
 ## Online Media Essentials
 Online surveys on the OTT market and trends, from the user's viewpoint.
@@ -220,32 +213,20 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 - Breakdown by business model: SVOD, AVOD, TVOD, TVE
 - Daily and weekly updates of the content offering
 - BB UID: a unique identifier for streamlined content tracking
-- Customized screengrab capabilities across multiple platforms
-- Advanced algorithm for navigating platform interfaces
-- Collection of data on carousel and item positions within the platform
+- `Screengrab` Customized screengrab capabilities across multiple platforms
+- `Screengrab` Advanced algorithm for navigating platform interfaces
+- `Screengrab` Collection of data on carousel and item positions within the platform
+- `Top Ten` Focus on popular platforms such as Netflix, Amazon Prime Video, and Disney+
+- `Top Ten` Regular updates on top ten lists from major streaming platforms
 
 ### Updates & Coverage
 - Data is updated daily and weekly
 - +4300 Streaming Services.
 - +250 Regions
-- Screengrab coverage on-deman
-- Screengrab weekly update
+- `Screengrab` Coverage on-deman
+- `Screengrab` Weekly updates
+- `Top Ten` Weekly updates to ensure the most current content rankings
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Streaming%20Availability/sa-schemas.md).
 
 📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Content%20Pulse%20dashboards.)
-
----
-
-## Top Ten
-Stay on top of trending lists with our Top Ten service, which analyzes popular platforms such as Netflix, Amazon Prime Video and Disney+. Understand what's capturing audience attention with current rankings.
-
-### Features
-- Regular updates on top ten lists from major streaming platforms
-- Focus on popular platforms such as Netflix, Amazon Prime Video, and Disney+
-
-### Updates & Coverage
-- Weekly updates to ensure the most current content rankings
-- Detailed insights into the performance of top content across various platforms
-
-🚀 For more information on schemas and to access our S3 buckets, please [click here](/Top%20Ten/top-ten-schemas.md).
