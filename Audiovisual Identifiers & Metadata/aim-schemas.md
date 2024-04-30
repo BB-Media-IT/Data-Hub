@@ -1,6 +1,6 @@
-# Audiovisual Identifier & Metadata
+# Audiovisual Identifiers & Metadata
 
-This document details the schemas used to manage the `Audiovisual Identifier & Metadata` product data. During the delivery process, a specific S3 Bucket is created for each client. In each of these buckets, we have a main folder containing files in JSONL format. This folder is named `Sources`. Additionally, within this folder, there is a subfolder named `latest`, where the latest snapshot of the `Metadata BB` database is stored.
+This document details the schemas used to manage the `Audiovisual Identifiers & Metadata` product data. During the delivery process, a specific S3 Bucket is created for each client. In each of these buckets, we have a main folder containing files in JSONL format. This folder is named `Sources`. Additionally, within this folder, there is a subfolder named `latest`, where the latest snapshot of the `Metadata BB` database is stored.
 
 ## Document Structure
 This document is organized into the following sections:
@@ -203,7 +203,7 @@ We provide a detailed description of the files contained in the `Sources` folder
 | CreatedAt | string  | Indicates when the record was created in our database. | 2024-04-21T00:00:00Z     |
 
 ## Table Visualization & Data Relationships
-We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall `Audiovisual Identifier & Metadata` product data model.
+We include tables to clearly visualize the relationships and key fields in each JSONL file and analyze how the various files interrelate to provide a complete view of the overall `Audiovisual Identifiers & Metadata` product data model.
 
 You can obtain the relationships between all BB Media products in this [link](/File%20Relationships/relationships.md).
 

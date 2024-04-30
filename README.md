@@ -29,14 +29,16 @@ Welcome to your go-to resource for media insights and data analytics, housed sec
 
 Here's what you can find in our S3 and Dashboards:
 
-- [Audiovisual Identifier & Metadata](#audiovisual-identifier--metadata)
+- [Audiovisual Identifiers & Metadata](#audiovisual-identifiers--metadata)
 - [Awards](#awards)
-- [Content Tracker & Upcoming Titles](#content-tracker--upcoming-titles)
+- [Content Tracker & Coming Soon](#content-tracker--coming-soon)
+- [Distributor](#distributors)
 - [Hits](#hits)
 - [Livestreaming & Fast Channels](#livestreaming--fast-channels)
+- [Online Audits](#online-audits)
 - [Online Media Essentials](#online-media-essentials)
 - [Platform Essentials](#platform-essentials)
-- [Platforms, Plans & Bundles](#platforms-plans--bundles)
+- [Prices, Plans & Bundles](#platforms-plans--bundles)
 - [Screengrab](#screengrab)
 - [Streaming Availability & Content Pulse](#streaming-availability--content-pulse)
 - [Top Ten](#top-ten)
@@ -45,7 +47,7 @@ Here's what you can find in our S3 and Dashboards:
 
 ---
 
-## Audiovisual Identifier & Metadata
+## Audiovisual Identifiers & Metadata
 Our advanced algorithm aims to standardize different products by unifying content identifiers, allowing for streamlined metadata across our offerings. Updated weekly, it gathers information from various sources to generate our universal identification code known as BB UID.
 
 ### Features
@@ -80,8 +82,8 @@ Our Awards tracking service monitors over 140 accolades in the audiovisual indus
 
 ---
 
-## Content Tracker & Upcoming Titles
-Stay ahead of the curve with our Content Tracker & Upcoming Titles service, meticulously curated to follow the lifecycle of content. Our analysts work tirelessly, sourcing information from Official Press Rooms and monitoring relevant news daily to provide comparative insights. We integrate normalized variables into our interactive databases for a streamlined experience.
+## Content Tracker & Coming Soon
+Stay ahead of the curve with our Content Tracker & Coming Soon service, meticulously curated to follow the lifecycle of content. Our analysts work tirelessly, sourcing information from Official Press Rooms and monitoring relevant news daily to provide comparative insights. We integrate normalized variables into our interactive databases for a streamlined experience.
 
 ### Features
 - Comprehensive tracking of content lifecycle
@@ -96,6 +98,13 @@ Stay ahead of the curve with our Content Tracker & Upcoming Titles service, meti
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Content%20Tracker%20&%20Upcoming%20Titles/ct-schemas.md).
 
 📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Content%20Tracker%20dashboards.)
+
+---
+## Distributors
+Discover what titles are being distributed by the leading Distributors and production companies.
+
+### Features
+### Updates & Coverage
 
 ---
 
@@ -132,6 +141,11 @@ Explore the breadth of live streaming and FAST channels with BB Media's dual-lev
 - Focus on key sports leagues and teams for targeted insights
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Livestreaming%20&%20Fast%20Channels/ls-schemas.md).
+
+---
+## Online Audits
+### Features
+### Updates & Coverage
 
 ---
 
@@ -179,7 +193,7 @@ Dive into details about platform types and genres, revenue models, launch dates,
 
 ---
 
-## Platforms, Plans & Bundles
+## Prices, Plans & Bundles
 Gain insights into how streaming platforms expand their user base through bundling with companies in every market. Expose their commercial strategies by monitoring real-time data on Prices, Plans, Commercial Alliances (bundles), Offers, Devices, and Functionalities. Includes screenshots capturing all surveyed variables and any changes observed.
 
 ### Features
@@ -198,22 +212,6 @@ Gain insights into how streaming platforms expand their user base through bundli
 
 ---
 
-## Screengrab
-Our Screengrab service offers a customized client experience, capturing screens across platforms. Our algorithm navigates the interface, taking snapshots and traversing carousels to gather critical information such as carousel and item positioning.
-
-### Features
-- Customized screengrab capabilities across multiple platforms
-- Advanced algorithm for navigating platform interfaces
-- Collection of data on carousel and item positions within the platform
-
-### Updates & Coverage
-- Frequent updates to adapt to platform changes and new features
-- Comprehensive data collection from various streaming services
-
-📊 For more information on dashboards, please [click here](mailto:hello@bb-media.com?subject=I%20want%20to%20learn%20more%20about%20Screengrab%20dashboards.)
-
----
-
 ## Streaming Availability & Content Pulse
 Discover a comprehensive database of movies, series, and episodes available on-demand (OD) in more than 200 regions. Our offering includes a detailed breakdown of business models such as SVOD, AVOD, TVOD, and TVE. **Content Pulse** provides normalized metadata, while 'Streaming Availability' offers raw data, showcasing how each service communicates its content with universal IDs and enriched with BB Media’s intelligent metadata.
 
@@ -222,11 +220,16 @@ Discover a comprehensive database of movies, series, and episodes available on-d
 - Breakdown by business model: SVOD, AVOD, TVOD, TVE
 - Daily and weekly updates of the content offering
 - BB UID: a unique identifier for streamlined content tracking
+- Customized screengrab capabilities across multiple platforms
+- Advanced algorithm for navigating platform interfaces
+- Collection of data on carousel and item positions within the platform
 
 ### Updates & Coverage
 - Data is updated daily and weekly
 - +4300 Streaming Services.
 - +250 Regions
+- Screengrab coverage on-deman
+- Screengrab weekly update
 
 🚀 For more information on schemas and to access our S3 buckets, please [click here](/Streaming%20Availability/sa-schemas.md).
 
