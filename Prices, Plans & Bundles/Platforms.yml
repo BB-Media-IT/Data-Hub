@@ -1,0 +1,41 @@
+Platforms:
+  type: object
+  properties:
+    platform_code:
+      type: string
+      description: 'Country ISO Code + platform name'
+    entry_date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date of the platforms first entry'
+    country:
+      type: string
+      description: 'Country of the platform being surveyed'
+    country_iso_code:
+      type: string
+      minLength: 2
+      maxLength: 2
+      example: AR
+      description: 'Country ISO Code'
+    owner: 
+      type: string
+      description: 'Name of the Company that owns the platform'
+    platform:
+      type: string
+      description: 'Name of the platform being surveyed'
+    bundle_access: 
+      type: boolean
+      description: 'Does the platform have bundles? YES/NO'
+    vpn:
+      type: string
+      enum:
+        - ExpressVPN
+        - Pure VPN
+        - Hola VPN
+        - HMA VPN
+        - CyberGohst VPN
+        - Nord VPN
+      description: 'VPN used to collect the data'

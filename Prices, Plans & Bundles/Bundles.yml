@@ -1,0 +1,137 @@
+Bundles:
+  type: object
+  properties:
+    country_iso_code:
+      type: string
+      minLength: 2
+      maxLength: 2
+      example: AR
+      description: 'Country ISO Code'
+    date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date on which the bundle is being scraped'
+    time:
+      type: string
+      format: date-time
+      minLength: 5
+      maxLength: 5
+      example: 17:00
+      description: 'Timezone offset in HH:MM format'
+    plan_id:
+      type: string
+      description: 'Platform Code + Plan Name'
+    bundle_plan_id:
+      type: string
+      description: 'Partner + Bundle Plan Name'
+    partner:
+      type: string
+      description: 'Name of platform/partner who is reselling/bundling *SVOD service'
+    bundle_plan_name:
+      type: string
+      description: 'Name of bundled plan, if different from product/tier names'
+    bundle_type:
+      type: string
+      enum:
+        - Commercial Bundle
+        - Billing Bundle
+        - Deeplink Bundle
+      description: 'Commercial Bundle/Billing Bundle/Deeplink Bundle'                               
+    currency:
+      type: string
+      description: 'Currency in which bundle price is charged to local customer'
+    bundle_plan_price:
+      type: float
+      description: 'Current price'
+    bundle_price_in_usd:
+      type: float
+      description: 'Bundle plan price in USD'
+    has_parent_price:
+      type: boolean
+      description: 'Does the bundle require acquiring any service as a prerequisite of getting the bundle? YES/NO'
+      nullable: true
+    parent_price:
+      type: float
+      description: 'Price of parent subscription that is prerequisite of getting bundle (cheapest if there are multiple)'
+    ott_app_in_stb:
+      type: boolean
+      description: 'Is the APP of the bundled platform available in the MSOs set-top box? YES/NO'        
+      nullable: true                                
+    bundle_offer_type:
+      type: string
+      enum:
+        - Free Trial
+        - Percentage Discount
+        - Discounted Amount
+        - Promotional Price
+      nullable: true                                         
+      description: 'Type of bundled offer. Free Trial/Discount/Amount/Price'
+    bundle_offer_amount:
+      type: float
+      description: 'Amount of money/percentage related to the bundle offer, in numbers'
+      nullable: true                                          
+    bundle_offer_duration:
+      type: float
+      description: 'Duration of the offer, counted in days'
+      nullable: true                                          
+    offer_communication:
+      type: string
+      enum:
+        - days
+        - weeks
+        - months
+        - years
+      nullable: true                                          
+      description: 'How is the offer duration being communicated? Days/Weeks/Months/Years'
+    bundle_screenshot_link:
+      type: string
+      description: 'Link to bundle screenshot'
+    bundle_link:
+      type: string
+      description: 'Link to bundle'
+    bundle_status:
+      type: string
+      enum:
+      - Active
+      - Inactive
+      - New
+      description: 'Active/Inactive/New'
+    week_number:
+      type: float
+      description: 'Nº of deliverable week to which the data belongs'
+    type_of_change:
+      type: string
+      enum:
+        - Modified
+        - Deleted
+        - Prices change
+        - Currency change
+        - Offer change
+        - New bundle
+      nullable: true 
+      description: 'Type of data change made in the row. Modified/Deleted'
+    inactive_bundle_date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date of invalid offer (if date is known)'
+      nullable: true
+    entry_barrier:
+      type: string
+      enum:
+        - Client of a specific company 
+        - Puchase of product 
+        - Subscriber to a specific service 
+        - Individual's Profession or Role 
+        - Payment Method 
+      description: 'Is the entry barrier we have to access a platform'
+      nullable: true
+    entry_barrier_details:
+      type: string
+      description: 'Is the entity to which I must subscribe/be a customer, etc.'
+      nullable: true

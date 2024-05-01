@@ -1,0 +1,246 @@
+Plans_and_Prices:
+  type: object
+  properties:
+    platform_code:
+      type: string
+      description: 'Country ISO Code + platform name'
+    country_iso_code:
+      type: string
+      minLength: 2
+      maxLength: 2
+      example: AR
+      description: 'Country ISO Code'
+    date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date on which the plan is being surveyed'
+    time:
+      type: string
+      format: date-time
+      minLength: 5
+      maxLength: 5
+      example: 17:00
+      description: 'Timezone offset in HH:MM format'
+    plan_id:
+      type: string
+      description: 'Platform Code + Plan Name'
+    plan_type:
+      type: string
+      description: 'Plan categorization (Basic/Additional/Free/Transactional)'
+      enum:
+        - Starter
+        - Additional
+        - Free
+        - Transactional
+    tier_type:
+      oneOf:
+        - type: string
+          enum:
+            - Content
+            - Devices
+            - Resolution
+            - Streams
+            - Profiles
+        - type: float
+      description: Plan's tier type according to its plan type
+      nullable: true  
+    revenue_model:
+      type: string
+      description: 'Revenue Model'
+      enum:
+        - Subscription VOD
+        - Transaction VOD
+        - Free VOD
+        - Premium VOD
+        - TV Everywhere
+        - Validated VOD
+        - Advertising VOD
+        - Ad-supported Subscription VOD
+    plan_name:
+      type: string
+      description: 'Name of the plan being surveyed, as advertised'
+    plan_screenshot_link:
+      type: string
+      description: 'Link to plan screenshot'
+    svod_duration:
+      type: string
+      description: 'For subscriptions only, time duration of subscription'
+      enum:
+        - Daily
+        - Two-day
+        - Three-day
+        - Weekly
+        - Two-weeks
+        - Monthly
+        - Quarterly
+        - Biannualy
+        - Yearly
+        - Others
+      nullable: true
+    tvod_content_type:
+      type: array
+      items: 
+        type: string
+        enum:
+          - Movies
+          - Series
+          - Seasons
+          - Episodes
+          - Events
+      description: 'FType of transactional content available to rent/purchase. (Movie, Serie, Season, Episode)'
+      nullable: true
+    live_channels_amount: 
+      type: float
+      description: 'Number of live channels'
+      nullable: true
+    currency:
+      type: string
+      minLength: 3
+      maxLength: 3
+      example: ARS
+      description: 'Currency in which price is charged to local customer'
+      nullable: true
+    price:
+      type: float
+      description: 'Current price'
+      nullable: true
+    price_in_usd:
+      type: number
+      description: 'Current price in USD'
+      nullable: true
+    price_first_date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date price first seen/ scraped / recorded'
+      nullable: true
+    price_change_date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date of most recent price change (if date is known)'
+      nullable: true
+    has_commercials:
+      type: boolean
+      description: 'Does this product include any commercials? YES/NO'
+      nullable: true
+    has_downloads:
+      type: boolean
+      description: 'Allows downloading of content for later viewing? YES/NO'
+      nullable: true
+    max_resolution:
+      type: string
+      enum:
+        - SD
+        - HD
+        - UHD
+        - Full HD
+        - 4K
+      description: 'Maximum streaming resolution. SD/HD/UHD/Full HD/4K'
+      nullable: true
+    max_profiles:
+      type: float
+      description: 'Maximum number of profiles per account (if stated)'
+      nullable: true
+    max_devices:
+      type: float
+      description: 'Maximum number of registered devices (if stated)'
+      nullable: true
+    max_streams:
+      type: float
+      description: 'Maximum number of simultaneous streams (if stated)'
+      nullable: true
+    max_downloads:
+      type: float
+      description: 'Maximum number of simultaneous/stored downloads (if stated)'
+      nullable: true
+    smart_tv_compatibility:
+      type: boolean
+      description: 'Available to stream on smart TV. YES/NO'
+      nullable: true
+    external_tv_device_compatibility:
+      type: boolean
+      description: 'Available to stream on any external TV device. YES/NO'
+      nullable: true
+    browser_compatibility:
+      type: boolean
+      description: 'Available on browsers (laptops and desktops, possibly others).YES/NO'
+      nullable: true
+    tablet_compatibility:
+      type: boolean
+      description: 'Available on tablet devices/apps. YES/NO'
+      nullable: true
+    mobile_compatibility:
+      type: boolean
+      description: 'Available on mobile devices/apps. YES/NO'
+      nullable: true
+    devices_screenshot_link:
+      type: string
+      description: 'Link to devices screenshot'
+    plan_status:
+      type: string
+      enum:
+        - Active
+        - Inactive
+      description: 'Active/Inactive/New'
+    price_url:
+      type: string
+      description: 'Complete url where price information was obtained.'
+      nullable: true
+    plan_url:
+      type: string
+      description: 'Complete url where plan features are obtained (if different from source of price).'
+      nullable: true
+    devices_url:
+      type: string
+      description: 'Complete url where devices information was obtained'
+      nullable: true
+    live_channels_url:
+      type: string
+      description: 'Complete url where live channels information was obtained.'
+      nullable: true
+    week_number:
+      type: float   
+      description: 'N° of deliverable week to which the data belongs'
+      nullable: true
+    type_of_change:
+      type: string
+      enum:
+        - Modified
+        - Deleted
+        - Prices change
+        - Plan name change
+        - New plan
+        - Currency change
+        - Devices change
+      nullable: true
+      description: 'Type of data change made in the row. Modified/Deleted'
+    inactive_plan_date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date of invalid plan (if date is known)'
+      nullable: true
+    entry_barrier:
+      type: string
+      enum:
+        - Client of a specific company 
+        - Puchase of product 
+        - Subscriber to a specific service 
+        - Individual's Profession or Role 
+        - Payment Method 
+      description: 'Is the entry barrier we have to access a platform'
+      nullable: true
+    entry_barrier_details:
+      type: string
+      description: 'Is the entity to which I must subscribe/be a customer, etc.'
+      nullable: true

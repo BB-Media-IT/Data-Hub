@@ -1,0 +1,102 @@
+Offers:
+  type: object
+  properties:
+    date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date on which the offer is being scraped'
+    plan_id:
+      type: string
+      description: 'Platform Code + Plan Name'
+    offer_id:
+      type: string
+      description: 'Product Plan ID + Offer Type + Offer Duration'
+    offer_type:
+      type: string
+      description: 'Free Trial/Discount/Amount/Price'
+      enum:
+        - Free Trial
+        - Percentage Discount
+        - Discounted Amount
+        - Promotional Price
+    offer_amount:
+      type: float
+      description: 'Amount of money/percentage related to the offer, in numbers'
+      nullable: true 
+    offer_duration:
+      type: integer
+      description: 'Duration of the offer, counted in days'
+    offer_comunication:
+      type: string
+      description: 'How is the offer duration being communicated? Days/Weeks/Months/Years'
+      enum:
+        - days
+        - weeks
+        - months
+        - years
+      nullable: true 
+    offer_screenshot_link:
+      type: string
+      description: 'Link to offer Screenshot'
+    offer_first_date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date offer first seen / scraped / recorded'
+      nullable: true  
+    offer_change_date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date of most recent offer change (if date is known)'
+      nullable: true
+    offer_status:
+      type: string
+      description: 'Active / Inactive / New'
+      enum:
+        - Activate
+        - Inactivate
+        - New
+    week_number:
+      type: float
+      description: 'Nº of deliverable week to which the data belongs'
+    type_of_change:
+      type: string
+      enum:
+        - Modified
+        - Deleted
+        - New offer
+        - Offer change
+        - Price change
+        - Offer name change
+      nullable: true 
+      description: 'Type of data change made in the row.'
+    inactive_offer_date:
+      type: string
+      format: date
+      minLength: 8
+      maxLength: 8
+      example: 2020-01-24
+      description: 'Date of invalid offer (if date is known)'
+      nullable: true
+    entry_barrier:
+      type: string
+      enum:
+        - Client of a specific company 
+        - Puchase of product 
+        - Subscriber to a specific service 
+        - Individual's Profession or Role 
+        - Payment Method 
+      description: 'Is the entry barrier we have to access a platform'
+      nullable: true
+    entry_barrier_details:
+      type: string
+      description: 'Is the entity to which I must subscribe/be a customer, etc.'
+      nullable: true
