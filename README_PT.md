@@ -13,15 +13,15 @@ O repositório **BB Media Data Hub** é o seu recurso central para acessar esque
 
 Em nosso repositório, oferecemos esquemas para uma ampla gama de produtos e serviços, incluindo:
 
-- Identificadores e Metadados Audiovisuais
-- Prêmios
-- Rastreador de Conteúdo & Em Breve
-- Distribuidor
+- Audiovisual Identifiers & Metadata
+- Awards
+- Content Tracker & Coming Soon
+- Distributor
 - Hits
-- Canais de Transmissão ao Vivo e Fast Channels
-- Preços, Planos & Pacotes
-- Disponibilidade de Streaming & Pulso de Conteúdo
-- Top Dez
+- Livestreaming & Fast Channels
+- Prices, Plans & Bundles
+- Streaming Availability & Content Pulse
+- Top Ten
 
 ### Ferramentas e recursos
 
