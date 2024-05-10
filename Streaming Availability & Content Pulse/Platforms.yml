@@ -6,15 +6,6 @@ ScrapingPlatforms:
       description: >
         ID for the platform. The ID refers to the platform across
         all available territories.
-    PlatformType:
-      type: array
-      itemes:
-        type: string
-        enum:
-          - ott
-          - gaming
-          - live-streaming
-          - channel
     PlatformCode:
       type: string
       description: Code identifying the platform and the territory.
@@ -66,31 +57,6 @@ ScrapingPlatforms:
       type: string
       format: date-time
       example: 2017-07-21T17:32:28Z
-    Services:
-      type: array
-      items:
-        type: string
-        enum:
-          - content-pulse
-          - prices-plans-bundles
-          - platform-essentials
-          - ads
-    Status:
-      type: array
-      items:
-        type: object
-        properties:
-          Status:
-            type: string
-            enum:
-              - active
-              - inactive
-          Deadline:
-            type: string
-            format: date-time
-            description: The time when the platform survey data will be available.
-            example: 2017-07-31T23:59:59Z
-            nullable: true
     IsActive:
       type: boolean
     Owners:
@@ -100,13 +66,6 @@ ScrapingPlatforms:
     Period:
       type: integer
       nullable: true
-    Priority:
-      type: string
-      enum:
-        - urgent
-        - high
-        - normal
-        - low
     ContentAggregator:
       type: boolean
       nullable: true
@@ -130,15 +89,3 @@ ScrapingPlatforms:
         Web:
           type: string
           nullable: true
-    Messages:
-      type: array
-      items:
-        type: object
-        properties:
-          Message:
-            type: string
-          CreatedAt:
-            type: string
-            format: date-time
-            example: 2017-07-21T17:32:28Z
-      nullable: true
