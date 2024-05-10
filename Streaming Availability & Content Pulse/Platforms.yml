@@ -69,13 +69,8 @@ ScrapingPlatforms:
     ContentAggregator:
       type: boolean
       nullable: true
-    PlatformLogos:
-      type: object
-      properties:
-        DLV:
-          type: string
-        Original:
-          type: string
+    PlatformLogo:
+      type: string
       nullable: true
     Links:
       type: object
