@@ -48,8 +48,11 @@ BBHits:
       nullable: false
     Type:
       type: string
-      description: Content type 'Movie'/'Tv Show'
-      example: serie
+      description: Content type
+      enum:
+        - Movie
+        - Tv Show
+      example: Movie
       nullable: false
     Genre:
       type: string
@@ -99,7 +102,7 @@ BBHits:
       nullable: false
     DeltaPositionInt:
       type: integer
-      description: Position change from previous week to current, if title wasn't in previous week data, is null.
+      description: Position change from previous week to current, if title wasn't in previous week data, is null
       example: 3
       nullable: true
     Average:
