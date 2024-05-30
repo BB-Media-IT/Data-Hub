@@ -350,6 +350,9 @@ Contents:
           Value:
             type: integer
             description: Rank assigned to the content on the platform.
+    NewEntry:
+      description: Indicates whether the content is new in this platform and region.
+      type: boolean
     UserData:
       description: List of attributes and values related to platform users, such as likes.
       type: array
