@@ -163,7 +163,19 @@ SourcesContents:
               type: integer
       nullable: true
     ReleaseDate:
+      description: Main release date.
       type: string
+      nullable: true
+    ReleaseDates:
+      description: List of release dates by territory.
+      type: array
+      items:
+          type: object
+          properties:
+            Date:
+              type: string
+            Year:
+              type: integer
       nullable: true
     Duration:
       type: integer
