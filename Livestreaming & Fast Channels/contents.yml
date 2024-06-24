@@ -18,7 +18,7 @@ Content:
       example: ar.plutotv
     CreatedAt:
       type: string
-      description: Date when the data was scraped.
+      description: String representing the date when the data was scraped.
       example: 2023-08-30
     Timestamp:
       type: date
@@ -37,7 +37,9 @@ Content:
       type: string
       description: >
         Type of the content.
-        undefined: Type cannot be determined.
+        movie: Content is a movie.
+        episode: Content is an episode.
+        undefined: Content type cannot be determined.
         placeholder: No content data available.
       enum:
         - movie
@@ -49,17 +51,20 @@ Content:
       type: string
       description: Deeplink for the content.
       example: https://example.com/content
+      nullable: True
     Year:
       type: integer
       minimum: 1870
       maximum: <current_year>
       description: Year of the content.
       example: 2023
+      nullable: True
     Synopsis:
       type: string
       description: Synopsis of the content.
       minLength: 3
       example: A gripping story about sports
+      nullable: True
     Images:
       type: array
       items:
@@ -68,11 +73,13 @@ Content:
       example:
         - https://example.com/image.jpg
         - https://example.com/image2.jpg
+      nullable: True
     Duration:
       type: integer
       minimum: 1
       description: Duration of the content in minutes.
       example: 120
+      nullable: True
     Genres:
       type: array
       items:
@@ -81,35 +88,43 @@ Content:
       example:
         - Action
         - Drama
+      nullable: True
     Rating:
       type: string
       description: Content rating.
       example: PG-13
+      nullable: True
     OnDemand:
       type: boolean
       description: Whether the content is available on-demand.
+      nullable: True
     IsAdult:
       type: boolean
       description: Whether the content is adult-oriented.
+      nullable: True
     IsKids:
       type: boolean
       description: Whether the content is kids-oriented.
+      nullable: True
     SerieTitle:
       type: string
       description: Title of the series if the content is part of a series.
       example: Breaking Bad
+      nullable: True
     Season:
       type: integer
       minimum: 0
       description: Season number if the content is part of a series.
       example: 1
+      nullable: True
     Episode:
       type: integer
       minimum: 0
       description: Episode number if the content is part of a series.
       example: 1
+      nullable: True
     Packages:
-      description: Revenue models assiciated with the content.
+      description: Revenue models associated with the content.
       type: array
       items:
         type: object
