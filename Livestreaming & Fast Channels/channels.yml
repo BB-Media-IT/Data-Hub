@@ -18,7 +18,7 @@ Channels:
       example: ar.plutotv
     CreatedAt:
       type: string
-      description: Date when the data was scraped.
+      description: String representing the date when the data was scraped.
       example: 2023-08-30
     Timestamp:
       type: date
@@ -41,15 +41,18 @@ Channels:
       type: string
       description: Channel deeplink.
       example: https://example.com/channel
+      nullable: True
     Broadcast:
       type: string
       description: MRL link if found.
       example: https://example.com/live/index.m3u8
+      nullable: True
     Number:
       type: integer
       minimum: 1
       description: Channel number if found.
       example: 100
+      nullable: True
     Images:
       description: Channel images.
       type: array
@@ -67,6 +70,7 @@ Channels:
             type: string
             description: Direct URL for the image.
             example: https://example.com/image.jpg
+      nullable: True
     Genres:
       type: array
       description: Channel genres.
@@ -75,41 +79,51 @@ Channels:
       example:
         - News
         - Sports
+      nullable: True
     Subtitles:
       type: array
       description: Subtitles available.
       example:
         - English
         - Spanish
+      nullable: True
     Dubbed:
       type: array
       description: Spoken languages available.
       example:
         - French
         - German
+      nullable: True
     FullDay:
       type: boolean
       description: Channel has no schedule defined but has 24 hours transmission.
+      nullable: True
     IsOriginal:
       type: boolean
       description: Platform original content.
+      nullable: True
     IsAdult:
       type: boolean
       description: Adult content or with age restriction.
+      nullable: True
     IsKids:
       type: boolean
       description: Kids content.
+      nullable: True
     IsFast:
       type: boolean
       description: Provides FAST content. Value assigned to the channel (not scraped).
       default: null
+      nullable: True
     FastBy:
       type: string
       description: FAST type. Value assigned to the channel (not scraped).
       default: null
+      nullable: True
     Owner:
       type: string
       description: Channel owner. Value assigned to the channel (not scraped).
+      nullable: True
     Packages:
       description: Channel revenue model.
       type: array
