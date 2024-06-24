@@ -1,6 +1,6 @@
 <p align="center">
 <image
-  src="https://s3.invisionapp-cdn.com/storage.invisionapp.com/boards/files/183060432.png?x-amz-meta-iv=1&x-amz-meta-ck=cd20ea812f8ae161523111afa5aea5e8&AWSAccessKeyId=AKIAWCDCF6QSLTS7LRWT&Expires=1717200000&Signature=90X61ZsbGe2EneL7IRbEzerj7Oc%3D"
+  src="https://github.com/BB-Media-IT/.github/assets/4085605/c08bf803-09ca-420c-b728-8f6ea85b3aa2"
   height=120
   margin=0>
 </p>
