@@ -23,6 +23,10 @@ sports:
             type: string
           name:
             type: string
+          year:
+            type: integer
+          description:
+            type: string
       eventStatus:
         type: string
       name:
