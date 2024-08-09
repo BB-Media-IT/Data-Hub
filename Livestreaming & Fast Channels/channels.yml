@@ -147,3 +147,7 @@ Channels:
     IsActive:
       type: boolean
       description: Indicates whether the channel was found active during the scraping.
+    Order:
+      type: int
+      description: The order of the channel in the webpages grid in relation to the other channels.
+      nullabe: True
