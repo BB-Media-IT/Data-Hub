@@ -1,0 +1,141 @@
+Events:
+  title: PayloadEvent
+  type: object
+  properties:
+    PlatformNumberId:
+      type: integer
+      description: >
+        ID for the platform. The ID refers to the platform across
+        all available territories.
+      example: 736
+    PlatformCountry:
+      type: string
+      description: Country ISO 3166-1 alpha-2 code.
+      example: US
+    PlatformCode:
+      type: string
+      description: Code identifying the platform and the territory.
+      example: us.peacock
+    CreatedAt:
+      type: string
+      description: String representing the date when the data was scraped.
+      example: 2024-04-13
+    Timestamp:
+      type: date
+      format: date-time
+      description: Timestamp when the scraping started.
+      example: 2024-04-13T08:18:00.484000
+    Id:
+      type: string
+      description: Unique identifier for the payload event.
+      example: 841bed64-28a5-3634-be8a-fd30ec77b6ec
+    Title:
+      type: string
+      description: Title of the Event.
+      example: Countdown to LA28
+    Type:
+      type: string
+      description: Type of the event payload. Can be `sport`, `concert`, `program` or `unknown`.
+      enum:
+        - sport
+        - concert
+        - program
+        - unknown
+      example: sport
+    Deeplink:
+      type: string
+      description: Deeplink for the event.
+      example: https://www.peacocktv.com/watch/asset/sports/la-2028-handover/8400ffd1-a569-3737-86a6-acccd061b32f
+      nullable: True
+    Broadcast:
+      type: string
+      description: MRL link if found.
+      example: https://example.com/live/index.m3u8
+      nullable: True
+    Synopsis:
+      type: string
+      description: Synopsis of the event.
+      example: NBC's coverage of the Autodesk Countdown to LA28 Presented by...
+      nullable: True
+    Image:
+      description: Images associated with the content.
+      type: array
+      items:
+        type: string
+        example: https://imageservice.disco.peacocktv.com/pcms/827150c0-34c1-11ef-bdf9-13d53a7912bc/LAND_16_9?proposition=NBCUOTT&language=eng&versionId=70138610-f110-5177-a441-1ff3a276d1bc&territory=US
+      nullable: True
+    Season:
+      type: string
+      description: Name of the season in which the event takes place.
+      example: UEFA Euro 2024
+      nullable: True
+    Genre:
+      type: array
+      description: Genre associated with the event.
+      items:
+        type: string
+        example: Ceremony
+      nullable: True
+    Language:
+      type: array
+      description: List of languages in which the event can be played.
+      items:
+        type: string
+      example:
+        - English
+        - Spanish
+      nullable: True
+    Crew:
+      type: array
+      description: List of the people and its roles associated with the event.
+      items:
+        type: object
+        properties:
+          Role:
+            type: string
+            description: Role of the crew member.
+            example: Singer
+          Name:
+            type: string
+            description: Name of the crew member.
+            example: James Hetfield
+      nullable: True
+    Date:
+      type: date
+      format: date-time
+      description: Start time of the payload event.
+      example: 2024-08-08T20:00:00
+    Duration:
+      type: integer
+      description: Duration of the event in minutes.
+      example: 120
+    Venue:
+      type: string
+      description: Venue in which the event will take place.
+      example: Estádio do Maracanã
+      nullable: True
+    Location:
+      type: string
+      description: Country or city in which the event will take place.
+      example: Texas
+      nullable: True
+    GMT:
+      type: integer
+      minimum: -12
+      maximum: 12
+      description: GMT timezone offset.
+      example: -4
+    Packages:
+      description: Revenue models associated with the event.
+      type: array
+      items:
+        type: object
+        properties:
+          Type:
+            type: string
+            description: The `vod` part is to keep consistency with codes across our data.
+            enum:
+              - free-vod
+              - subscription-vod
+              - validated-vod
+              - tv-everywhere
