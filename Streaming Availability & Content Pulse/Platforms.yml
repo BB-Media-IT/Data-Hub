@@ -72,6 +72,9 @@ ScrapingPlatforms:
     PlatformLogo:
       type: string
       nullable: true
+    AndroidPackage:
+      type: string
+      nullable: true
     Links:
       type: object
       properties:
