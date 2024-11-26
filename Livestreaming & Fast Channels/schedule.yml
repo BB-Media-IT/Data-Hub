@@ -42,7 +42,11 @@ Schedule:
       description: Unique identifier for the content associated with the payload.
     ContentTitle:
       type: string
-      description: Resumen de la Liga
+      description: Title of the content associated with the payload.
+      example: Resumen de la Liga
+    ContentMetadata:
+      type: bool
+      description: This Content payload exists in the contents collection if it has more metadata than just ContentId and ContentTitle.
     Type:
       type: string
       description: >
