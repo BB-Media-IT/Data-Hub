@@ -69,6 +69,15 @@ Events:
       description: Name of the season in which the event takes place.
       example: UEFA Euro 2024
       nullable: True
+    ParentId:
+      type: string
+      description: Name of the channel or other event which parents this event.
+      example: WWE Raw
+      nullable: True
+    ParentTitle:
+      type: string
+      description: Id of the channel or other event which parents this event.
+      nullable: True
     Genre:
       type: array
       description: Genre associated with the event.
