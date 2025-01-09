@@ -98,6 +98,10 @@ Channels:
       type: boolean
       description: Channel has no schedule defined but has 24 hours transmission.
       nullable: True
+    OnlyEvents:
+      type: boolean
+      description: Channel has no schedule defined but has events related to it.
+      nullable: True
     IsOriginal:
       type: boolean
       description: Platform original content.
