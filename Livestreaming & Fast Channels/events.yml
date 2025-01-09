@@ -71,12 +71,12 @@ Events:
       nullable: True
     ParentId:
       type: string
-      description: Name of the channel or other event which parents this event.
-      example: WWE Raw
+      description: Id of the channel or other event which parents this event.
       nullable: True
     ParentTitle:
       type: string
-      description: Id of the channel or other event which parents this event.
+      description: Name of the channel or other event which parents this event.
+      example: WWE Raw
       nullable: True
     Genre:
       type: array
