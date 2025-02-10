@@ -3,18 +3,10 @@ SourcesPopularity:
   properties:
     UID:
       type: string
-    Provider:
-      type: string
-      enum:
-        - imdb
-        - tmdb
     ID:
       type: string
     Popularity:
       type: integer
-    MetacriticScore:
-      type: integer
-      nullable: true
     CreatedAt:
       type: string
       format: date-time
