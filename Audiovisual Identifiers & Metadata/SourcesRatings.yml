@@ -4,13 +4,6 @@ SourcesRatings:
   properties:
     UID:
       type: string
-    Provider: 
-      type: string
-      enum: 
-        - imdb
-        - tmdb
-    ID:
-      type: string
     Votes:
       type: integer
     Score:
