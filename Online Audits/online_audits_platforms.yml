@@ -1,0 +1,65 @@
+OnlineAuditsPlatforms:
+  type: object
+  properties:
+    Date:
+      type: string
+      description: Creation date, YYYY-MM-DD
+    Platform:
+      type: string
+      description: Commercial name
+    PlatformCode:
+      type: string
+      description: Canonical code used across BB Media datasets
+    Url:
+      type: string
+      description: Root URL
+    AccessMethod:
+      type: string
+      description: VOD
+    ContentType:
+      type: string
+      description: Anime, Movie, Series
+    OriginCountry:
+      type: string
+      description: Iso Alpha3 country code where the service is presumed to be operated
+    Domain:
+      type: string
+      description: Registered domain
+    TotalVisits:
+      type: integer
+    GlobalRanking:
+      type: integer
+      description: Global SimilarWeb rank
+    CountryTrafficPenetration:
+      type: array
+      description: Top country web traffic penetration percentages list
+      items:
+        type: object
+        properties:
+          Country:
+            type: string
+            description: country name
+          Percentage:
+            type: float
+            description: percentage of traffic from the country
+    CountryRanking:
+      type: array
+      description: Dictionary of country->rank limited to tracked markets
+      items:
+        type: object
+        properties:
+          Country:
+            type: string
+            description: country name
+          Rank:
+            type: integer
+            description: Rank in the country, 1 is the most visited website
+    Dns:
+      type: string
+    Ip:
+      type: string
+    ServerLocation:
+      type: string
+      description: iso alpha 2 country code where the server is located
+    HostServers:
+      type: string

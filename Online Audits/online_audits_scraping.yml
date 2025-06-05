@@ -1,0 +1,35 @@
+OnlineAuditsScrapings:
+  type: object
+  properties:
+    Date:
+      type: date
+      description: Creation date, YYYY-MM-DD
+    PlatformCode:
+      type: string
+      example: cuevanacom
+    UID:
+      type: string
+      example: 0000002f2331fca583ca3d280ee136be
+    Title:
+      type: string
+    OriginalTitle:
+      type: string
+    ContentType:
+      type: string
+      enum:
+        - Movie
+        - Series
+    Year:
+      type: integer
+    IMDbId:
+      type: string
+    Permalink:
+      type: string
+      description: Original URL on the piracy site
+    Genres:
+      type: string
+    ReleaseDate:
+      type: string
+      description: Release date, YYYY-MM-DD
+    PrimaryCountry:
+      type: string
